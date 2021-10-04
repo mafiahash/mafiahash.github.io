@@ -1,0 +1,253 @@
+@font-face{
+    font-family: "Roboto";
+    src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+    }
+
+body{
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    background-color: #EEEEEE;
+    font-weight: normal;
+    color: #000000;
+    font-size: 32px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+
+/* header style start*/
+.header{
+    background-color: #007765;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__logo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__list{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+    font-family: Roboto;
+    font-style: normal;
+    margin-right: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    transition: 2s;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+    transition: 0.5s;
+}
+/* header style end*/
+
+/* welcome style start*/
+.welcome{
+    height: 403px;
+    background: url(images/pipernet.png) no-repeat center;
+    background-size: cover;
+    padding-top: 190px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+/* welcome style end*/
+
+/* the problem start*/
+
+.theproblem h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+    padding-top: 48px;
+}
+
+.theproblem__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    padding-top: 16px;
+    padding-bottom: 92px;
+    color: #000000;
+}
+
+/* the problem end*/
+
+/* hero start*/
+
+.hero{
+    background: url(images/hero.png) no-repeat;
+    background-size: cover;
+    height: 483px;
+}
+
+.hero__header{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    padding-top: 160px;
+    color: #FFFFFF;
+}
+/*hero end*/
+
+/*PPC Start*/
+.ppc__header{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+    padding-top: 48px;
+}
+
+.ppc__logo{
+    float: left;
+    padding-right: 48px;
+}
+
+.ppc__text1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #000000;
+    float: right;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+.ppc__text2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    padding-bottom: 92px;
+}
+
+.ppc{
+    background-color: white;
+}
+
+/*PPC END*/
+
+/*THE TEAM START*/
+.the_team__header{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+    padding-top: 58px;
+}
+
+.face{
+    padding-left: 212px;
+    padding-right: 212px;
+}
+
+.face:first-child{
+    padding-left: 91px;
+    padding-right: 0;
+}
+.face:last-child{
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+.theteam__layer1{
+    padding-top: 56px;
+}
+.theteam__layer2{
+    padding-top: 82px;
+    padding-bottom: 175px;
+}
+/*THE TEAM END*/
+
+/*FOOTER START*/
+
+.footer{
+    
+    height: 176px;
+    background-color: #333333 ;
+}
+.footer__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+/*FOOTER END*/
