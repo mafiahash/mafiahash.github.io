@@ -53,7 +53,8 @@ body{
 .nav__burger{
     background-color: Transparent;
     background-repeat:no-repeat;
-    border: none;  
+    border: none;
+    padding: 0 0;
 }
 
 .mobile__nav{
@@ -63,7 +64,6 @@ body{
     height: 100%;
     background: #FFFFFF;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
-    margin-top: 1px;
     padding: 0 10px;
     padding-top: 64px;
     transition: 0.5s;
