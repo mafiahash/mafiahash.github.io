@@ -384,8 +384,94 @@ body{
         font-size: 18px;
         padding: 15px 25px;
     }
-
-
-
 }
 /* PRICE */
+/* BUILDINGS */
+.buildings{
+    padding: 50px 10px;
+}
+.buildings__title{
+    font-weight: 400;
+    font-size: 40px;
+    color: #200B9F;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.buildings__title span{
+    font-weight: 700;
+}
+
+.buildings__lists{
+    display: grid;
+    grid-template-columns: repeat(2, 315px);
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.buildings__list{
+    width: 315px;
+    /* min-width: 250px; */
+}
+.buildings__list-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.buildings__list-item__title{
+    font-weight: 700;
+    font-size: 25px;
+    color: #200B9F;
+}
+.buildings__list-item__name{
+    font-weight: 700;
+    font-size: 20px;
+    color: #200B9F;
+}
+.buildings__list-item__beton{
+    font-weight: 300;
+    font-size: 20px;
+    color: #200B9F;
+}
+
+@media screen and (max-width: 696px) {
+    .buildings__lists{
+        grid-template-columns: repeat(1, 315px);
+        row-gap: 40px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 465px) {
+    .buildings__title{
+        font-size: 25px;
+    }
+    .buildings__lists{
+        grid-template-columns: repeat(1, 260px);
+    }
+    .buildings__list{
+        width: 260px;
+    }
+    .buildings__list-item__title{
+        font-size: 20px;
+    }
+    .buildings__list-item__name{
+        font-size: 18px;
+    }
+    .buildings__list-item__beton{
+        font-size: 18px;
+    }
+}
+/* BUILDINGS */
+/* CALCULATOR */
+
+.calculator{
+    padding: 10px 0;
+}
+.calculator__title{
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: #200B9F;
+}
+
+
+/* CALCULATOR */
