@@ -7,6 +7,17 @@ body{
     max-width: 1020px;
     margin: 0 auto;
 }
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #301E9D;
+    border-radius: 100px;   
+}
 
 
 /* HEADER */
@@ -460,18 +471,142 @@ body{
     }
 }
 /* BUILDINGS */
-/* CALCULATOR */
+/* ORDER */
 
-.calculator{
-    padding: 10px 0;
+.order{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 }
-.calculator__title{
+.order__title{
     font-weight: 700;
     font-size: 40px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 50px;
     color: #200B9F;
 }
+.order__form{
+    width: 400px;
+    height: 480px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 8px rgba(32, 11, 159, 0.4);
+    border-radius: 10px;
+    padding: 35px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.order__form-input__title{
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #200B9F;
+}
+.order__form-input__input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #200B9F;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+.order__form-input__input::placeholder{
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(32, 11, 159, 0.6);
+}
+.order__form-wrapper__btn{
+    display: flex;
+    justify-content: center;
+}
+.order__form-btn{
+    width: 140px;
+    height: 40px;
+    background: #8B79F7;
+    border-radius: 100px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 20px;
+}
 
+@media screen and (max-width: 465px) {
+    .order__title{
+        font-size: 25px;
+    }
+    .order__form-input__title{
+        font-size: 20px;
+    }
+    .order__form{
+        width: 270px;
+    }
+}
+/* ORDER */
 
-/* CALCULATOR */
+/* certificates */
+
+.certificates{
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+.certificates__title{
+    font-weight: 700;
+    font-size: 40px;
+    color: #200B9F;
+    text-align: center;
+}
+.certificates__gallary{
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
+    overflow-x: auto;
+}
+.certificates__gallary-item{
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 465px) {
+    .certificates__title{
+        font-size: 25px;
+    }
+}
+
+/* certificates */
+
+/* footer */
+.footerbg{
+    background: #301E9D;
+    
+}
+.footer{
+    padding: 35px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__logo{
+    width: 83px;
+    height: 45px;
+}
+.footer__link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+.footer__link span{
+    font-weight: 300;
+}
+
+@media screen and (max-width: 465px) {
+    .footer__link{
+        font-size: 15px;
+    }
+}
+
+/* footer */
