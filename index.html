@@ -10,29 +10,29 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <div class="header pc">
+    <div id="header" class="header pc">
         <div class="container">
             <div class="header__wrapper">
                 <a href="" class="header__logo-link"><img src="/assets/img/header/Logo.svg" alt="" class="header__logo"></a>
                 <div class="header__items">
-                    <a href="" class="header__item header__item-active">Преимущества</a>
+                    <a href="" class="header__item">Преимущества</a>
                     <a href="" class="header__item">Прайс</a>
                     <a href="" class="header__item">Конструкции</a>
                     <a href="" class="header__item">Калькулятор</a>
                     <a href="" class="header__item">Документы</a>
                 </div>
-                <a href="" class="header__phone-link"><img src="/assets/img/header/phone.svg" alt="" class="heder_phone"></a>
+                <a href="tel: +79184308885" class="header__phone-link"><img src="/assets/img/header/phone.svg" alt="" class="heder_phone"></a>
             </div>
         </div>
     </div>
 
-    <div class="header mobile">
+    <div id="header__mobile" class="header mobile">
         <div class="header__wrapper">
             <div class="header__nav">
                 <button class="nav__burger"><img src="/assets/img/header/menu.svg" alt=""></button>
-                <a href="" class="header__logo-link"><img src="/assets/img/header/Logo.svg" alt="" class="header__logo"></a>
+                <a href="/index.html" class="header__logo-link"><img src="/assets/img/header/Logo.svg" alt="" class="header__logo"></a>
             </div>
-            <a href="" class="header__phone-link"><img src="/assets/img/header/phone.svg" alt="" class="heder_phone"></a>
+            <a href="tel: +79184308885" class="header__phone-link"><img src="/assets/img/header/phone.svg" alt="" class="heder_phone"></a>
         </div>
     </div>
 
@@ -57,19 +57,42 @@
                 <div class="intro__texts">
                     <h1 class="intro__texts-title">ПРОИЗВОДСТВО БЕТОНА <span>В ЕЙСКЕ</span></h1>
                     <p class="intro__texts-subtitle">30 лет на рынке</p>
-                    <button class="intro__texts-btn">
+                    <button id="open_pop_up" class="intro__texts-btn">
                         Заказать
                     </button>
                 </div>
-                <div class="intro__order">
+                <form action="" id="order__phone" class="intro__order">
                     <h1 class="intro__order-title">Быстрый заказ бетона</h1>
                     <p class="intro__order-subtitle">Менеджер свяжется с вами в течение нескольких минут</p>
-                    <input class="intro__order-phone" type="tel" name="phone" placeholder="ТЕЛЕФОН">
+                    <input class="intro__order-phone phone" type="tel" name="phone" placeholder="ТЕЛЕФОН">
                     <button class="intro__order-btn">ОТПРАВИТЬ</button>
-                </div>
+                    <p style="text-align: center;
+                        font-size: 20px;
+                        color: #200B9F;
+                        padding-top: 20px;
+                        display: none;" id="popup-order__success-text">Заявка отправлена!</p>
+                </form>
             </div>
         </div>
     </div>
+
+    <div id="pop_up" class="popup">
+        <div class="popup__container">
+            <form action="" id="popup-order__phone"  class="popup__body">
+                <h1 class="intro__order-title">Быстрый заказ бетона</h1>
+                <p class="intro__order-subtitle">Менеджер свяжется с вами в течение нескольких минут</p>
+                <input class="intro__order-phone phone" type="tel" name="phone" placeholder="ТЕЛЕФОН">
+                <button class="intro__order-btn">ОТПРАВИТЬ</button>
+                <div id="close_pop_up" class="popup__close">&#10006</div>
+                <p style="text-align: center;
+                        font-size: 20px;
+                        color: #200B9F;
+                        padding-top: 20px;
+                        display: none;" id="popup-order__success-text">Заявка отправлена!</p>
+            </form>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="advantages">
@@ -242,23 +265,23 @@
     <div class="container">
         <div class="order">
             <h1 class="order__title">Оформить заказ</h1>
-            <div class="order__form">
+            <form action="" id="big-order__phone" class="order__form">
                 <div class="order__form-input">
                     <p class="order__form-input__title">Имя</p>
-                    <input type="text" placeholder="Имя" class="order__form-input__input">
+                    <input type="text" name="name" placeholder="Имя" class="order__form-input__input">
                 </div>
                 <div class="order__form-input">
                     <p class="order__form-input__title">Телефон</p>
-                    <input type="text" placeholder="Телефон" class="order__form-input__input">
+                    <input type="text" name="phone" placeholder="Телефон" class="order__form-input__input phone">
                 </div>
                 <div class="order__form-input">
                     <p class="order__form-input__title">Марка бетона</p>
-                    <input type="text" placeholder="Марка" class="order__form-input__input">
+                    <input type="text" name="marka" placeholder="Марка" class="order__form-input__input">
                 </div>
                 <div class="order__form-wrapper__btn">
                     <button class="order__form-btn">Оформить</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -289,5 +312,79 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/axios.js"></script>
+    <script src="assets/js/phone.js"></script>
+
+    <script>
+        const phoneMaskSelector = '.phone';
+        const phoneMaskInputs = document.querySelectorAll(phoneMaskSelector);
+        const masksOptions = {
+        phone: {
+            mask: '+{7} (000) 000-00-00'
+        }
+        };
+        for(const item of phoneMaskInputs) {
+        new IMask(item, masksOptions.phone);
+        }
+        </script>
+
+    <script>
+        const TOKEN = "5565724085:AAGjpMubB4VhxqJ93-hchYYX84v2YtnM4cg";
+        const CHAT_ID = "1303621741";
+        const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+        const success = document.getElementById('popup-order__success-text');
+
+        document.getElementById('popup-order__phone').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let message = '<b>Новая заявка!</b>\n';
+            message += `<b>Номер: ${ this.phone.value }</b> \n`;
+            
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            })
+            .then((res) => {
+                success.style.display = "block";
+            })
+        })
+
+        document.getElementById('order__phone').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let message = '<b>Новая заявка!</b>\n';
+            message += `<b>Номер: ${ this.phone.value }</b> \n`;
+            
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            })
+            .then((res) => {
+                success.style.display = "block";
+            })
+        })
+
+        document.getElementById('big-order__phone').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let message = '<b>Новая заявка!</b>\n';
+            message += `<b>Имя: ${ this.name.value }</b> \n`;
+            message += `<b>Номер: ${ this.phone.value }</b> \n`;
+            message += `<b>Бетон: ${ this.marka.value }</b> \n`;
+            
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            })
+            .then((res) => {
+                success.style.display = "block";
+            })
+        })
+    </script>
+
+    
 </body>
 </html>

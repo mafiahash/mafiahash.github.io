@@ -26,6 +26,9 @@ body{
     width: 100%;
     z-index: 2;
 }
+.header-active{
+    background-color: #301e9d;
+}
 .header__wrapper{
     display: flex;
     justify-content: space-between;
@@ -42,15 +45,11 @@ body{
     padding-right: 20px;
 }
 .header__item-mobile{
-    color: #8B79F6;
+    color: #FFFFFF;
 }
 
 .header__item:last-child{
     padding-right: 0px;
-}
-
-.header__item-active{
-    color: #8B79F7;
 }
 
 .mobile{
@@ -73,7 +72,7 @@ body{
     width: 250px;
     max-width: 250px;
     height: 100%;
-    background: #FFFFFF;
+    background: #301e9d;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
     padding: 0 10px;
     padding-top: 64px;
@@ -220,7 +219,47 @@ body{
 
 /* INTRO */
 
+/* POPUP*/
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    display: none;
+}
 
+.popup__container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.popup__body{
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+}
+
+.popup__close{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup__active{
+    display: block;
+}
+/* POPUP*/
 /* ADVANTAGES */
 
 .advantages{
@@ -314,10 +353,12 @@ body{
     grid-template-columns: repeat(2, 315px);
     justify-content: space-between;
     margin-bottom: 50px;
+    row-gap: 50px;
 }
 .price__list{
     width: 315px;
     /* min-width: 250px; */
+
 }
 .price__list-item{
     display: flex;
@@ -330,8 +371,14 @@ body{
     color: #FFFFFF;
 }
 .price__list-item__name{
+    width: 210px;
     font-weight: 700;
     font-size: 20px;
+    color: #FFFFFF;
+}
+.price__list-item__supname{
+    font-weight: 200;
+    font-size: 13px;
     color: #FFFFFF;
 }
 .price__list-item__price{
@@ -610,3 +657,32 @@ body{
 }
 
 /* footer */
+
+
+
+/* NEXT PAGE */
+/* About */ 
+.about{
+    margin-top: 50px;
+}
+.about__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    color: #301E9D;
+    padding-bottom: 50px;
+}
+.about__text{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 50px;
+}
+/* About */ 
+
+/* NEXT PAGE */
+/* PRICE */ 
+
+
+
+/* PRICE */ 
