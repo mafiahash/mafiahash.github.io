@@ -182,6 +182,7 @@ body{
   width: 50%;
   background-size: cover;
   background-position: center center;
+  transform: scaleX(-1);
 }
 @media (max-width: 768px) {
   .intro {
