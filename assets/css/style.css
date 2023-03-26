@@ -182,7 +182,6 @@ body{
   width: 50%;
   background-size: cover;
   background-position: center center;
-  transform: scaleX(-1);
 }
 @media (max-width: 768px) {
   .intro {
@@ -219,67 +218,14 @@ body{
   font-size: 32px;
   font-weight: bold;
 }
-
-.advantages {
-  background-color: #0000;
-  padding: 50px 0;
+.work__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.advantages-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.advantages-heading {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch; /* задаем выравнивание элементов по высоте */
-  flex-wrap: wrap;
-  margin: 0 -20px;
-}
-
-
-.advantages-item {
-  width: calc(33.33% - 40px);
-  height: 200px;
-  overflow: hidden;
-  font-size: 24px;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #2b2b2b;
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.advantages-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-
-@media (max-width: 768px) {
-  .advantages-item {
-    width: calc(50% - 40px);
-  }
-}
-
-@media (max-width: 576px) {
-  .advantages-item {
-    width: 100%;
-  }
+.work__pic{
+    transform: scaleX(-1) translateY(8%);
+    
 }
 
 /* WORK */
@@ -338,31 +284,6 @@ body{
 .glow-button {
     animation: pulse 1s ease-in-out infinite alternate;
 }
-  
-  
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .modal {
     display: none;
@@ -373,7 +294,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -469,3 +390,134 @@ body{
 
 }
 /* feedback */
+
+
+
+
+
+
+
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+    transform: translate(0%, -100%);
+  }
+  
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.marketing-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .marketing-step {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .marketing-step:hover {
+    transform: translateY(-10px);
+  }
+  
+  .step-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #39E991;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  
+  .marketing-step h3 {
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .marketing-step p {
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .marketing-step {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+
