@@ -219,23 +219,75 @@ body{
   font-weight: bold;
 }
 .work__block{
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .work__pic{
-    transform: scaleX(-1) translateY(8%);
-    
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+    max-width: 100%;
+    height: auto;
+    width: 400px;
 }
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+  }
+  @media (max-width: 768px) {
+    .work__block{
+        flex-direction: column;
+        height: 80vh;
+    }
+  }
 
 /* WORK */
 
-/* feedback */
-.feedbackbg{
+/* youtube */
+.youtubebg{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/assets/img/feedback-bg.jpg);
     background-size: cover;
     background-position: center;
 }
+.youtube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.youtube__iframe{
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+    max-width: 100%;
+    height: auto;
+    width: 900px;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+/* youtube */
+/* feedback */
 .feedback{
     flex-direction: column;
     display: flex;
@@ -404,7 +456,7 @@ body{
     margin-bottom:-7px; /*Fix for safari gap*/
     min-height:100px;
     max-height:150px;
-    transform: translate(0%, -100%);
+    transform: translate(0%, -99%);
   }
   
   
