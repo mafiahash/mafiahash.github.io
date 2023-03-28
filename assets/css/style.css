@@ -224,6 +224,11 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.work__info{
+    width: 65%;
+    line-height: 1.5em;
+}
+
 .work__pic{
     border: 2px solid white;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -249,7 +254,15 @@ body{
   @media (max-width: 768px) {
     .work__block{
         flex-direction: column;
-        height: 80vh;
+        height: 100%;
+    }
+    .work__info{
+        font-size: 15px;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    .work__header{
+        font-size: 25px;
     }
   }
 
@@ -439,7 +452,9 @@ body{
         width: 300px;
         height: 500px;
     }
-
+    .feedback__header{
+        font-size: 25px;
+    }
 }
 /* feedback */
 
