@@ -59,8 +59,27 @@
     <div class="wrapper">
       <h1 class="collection__header">Наши коллекции</h1>
       <div class="collection__items">
+        <!-- Card 1 -->
+        <div class="collection__item" data-gallery-id="1">
+          <div class="collection__item1">
+            <img src="/assets/img/item1.jpg" alt="" class="collection__img">
+          </div>
+          <div class="collection__item2">
+            <h1 class="collection__item-header">Кресло</h1>
+            <p class="collection__item-price">6 990₽</p>
+          </div>
+        </div>
 
-        <div class="collection__item">
+        <div class="hidden-gallery" data-gallery-id="1">
+          <img src="/assets/img/item1.jpg" alt="Фото 1 товара 1">
+          <img src="/assets/img/item1_1.jpg" alt="Фото 2 товара 1">
+          <img src="/assets/img/item1_2.jpg" alt="Фото 3 товара 1">
+          <img src="/assets/img/item1_3.jpg" alt="Фото 4 товара 1">
+          <img src="/assets/img/item1_4.jpg" alt="Фото 5 товара 1">
+        </div>
+        <!-- Card 1 -->
+        <!-- Card 2 -->
+        <div class="collection__item" data-gallery-id="2">
           <div class="collection__item1">
             <img src="/assets/img/item2.jpg" alt="" class="collection__img">
           </div>
@@ -70,56 +89,24 @@
           </div>
         </div>
 
-        <div class="collection__item">
-          <div class="collection__item1">
-            <img src="/assets/img/item1.png" alt="" class="collection__img">
-          </div>
-          <div class="collection__item2">
-            <h1 class="collection__item-header">Кресло</h1>
-            <p class="collection__item-price">6 990₽</p>
+        <div class="hidden-gallery" data-gallery-id="2">
+          <img src="/assets/img/item2.jpg" alt="Фото 1 товара 2">
+          <img src="/assets/img/item2_1.jpg" alt="Фото 2 товара 2">
+          <img src="/assets/img/item2_2.jpg" alt="Фото 3 товара 2">
+          <img src="/assets/img/item2_3.jpg" alt="Фото 3 товара 2">
+          <img src="/assets/img/item2_4.jpg" alt="Фото 3 товара 2">
+        </div>
+        <!-- Card 2 -->
+
+
+
+        <div class="gallery-modal" id="galleryModal">
+          <span class="close">&times;</span>
+          <div class="gallery-content">
+              <img class="modal-content" id="modalImage">
+              <div id="galleryThumbnails" class="gallery-thumbnails"></div>
           </div>
         </div>
-
-        <div class="collection__item">
-          <div class="collection__item1">
-            <img src="/assets/img/item1.png" alt="" class="collection__img">
-          </div>
-          <div class="collection__item2">
-            <h1 class="collection__item-header">Кресло</h1>
-            <p class="collection__item-price">6 990₽</p>
-          </div>
-        </div>
-
-        <div class="collection__item">
-          <div class="collection__item1">
-            <img src="/assets/img/item1.png" alt="" class="collection__img">
-          </div>
-          <div class="collection__item2">
-            <h1 class="collection__item-header">Кресло</h1>
-            <p class="collection__item-price">6 990₽</p>
-          </div>
-        </div>
-
-        <div class="collection__item">
-          <div class="collection__item1">
-            <img src="/assets/img/item1.png" alt="" class="collection__img">
-          </div>
-          <div class="collection__item2">
-            <h1 class="collection__item-header">Кресло</h1>
-            <p class="collection__item-price">6 990₽</p>
-          </div>
-        </div>
-
-        <div class="collection__item">
-          <div class="collection__item1">
-            <img src="/assets/img/item1.png" alt="" class="collection__img">
-          </div>
-          <div class="collection__item2">
-            <h1 class="collection__item-header">Кресло</h1>
-            <p class="collection__item-price">6 990₽</p>
-          </div>
-        </div>
-
 
       </div>
     </div>
@@ -150,6 +137,8 @@
           <div class="contacts__form-fields">
             <label for="name" class="contacts__form-fields__label">Имя:</label>
             <input type="text" name="name" id="name" placeholder="Имя" class="contacts__form-fields__modal">
+            <label for="name" class="contacts__form-fields__label">Город:</label>
+            <input type="text" name="city" id="city" placeholder="Город" class="contacts__form-fields__modal">
             <label for="phone" class="contacts__form-fields__label">Номер телефона:</label>
             <input type="tel" name="phone" id="phone" placeholder="Номер телефона" class="contacts__form-fields__modal">
           </div>
@@ -200,7 +189,7 @@
         <p>&copy; 2023 Все права защищены.</p>
     </div>
   </footer>
-
+    <script src="/assets/js/collection__modal.js"></script>
     <script src="/assets/js/animate.js"></script>
     <script src="/assets/js/burger.js"></script>
     <script src="/assets/js/scroll.js"></script>
