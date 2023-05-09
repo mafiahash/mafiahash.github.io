@@ -9,7 +9,7 @@ body{
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 12px;
 }
   
 ::-webkit-scrollbar-thumb {
@@ -58,6 +58,10 @@ body{
     color: #fff;
     font-size: 18px;
   }
+.logo img{
+  height: 70px;
+  width: auto;
+}
   
   .nav {
     display: flex;
@@ -190,7 +194,7 @@ body{
   font-weight: 700;
 }
 .intro__text{
-    width: 389px;
+    width: 450px;
     font-weight: 300;
     font-size: 18px;
     line-height: 130%;
@@ -277,6 +281,7 @@ body{
 }
 .why__wrapper{
   display: flex;
+  justify-content: space-around;
 }
 .why__header{
   font-weight: 700;
@@ -286,13 +291,14 @@ body{
   padding-bottom: 50px;
 }
 .why__text{
+  max-width: 700px;
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
 }
 .why__img{
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
   overflow: hidden;
 }
@@ -354,24 +360,28 @@ body{
 }
 .collection__item1{
   width: 225px;
-  height: 240px;
-  background: #4F4F4F;
-  border-radius: 25px 25px 0px 0px;
-  padding: 20px 10px 10px 10px;
+  height: 140px;
+  background: #6C9E12;
+  border-radius: 10px 10px 0px 0px;
+}
+.collection__img{
+  transform: translate(0,-40px) 
 }
 .collection__item2{
   width: 225px;
-  height: 90px;
+  height: 180px;
   background: #252525;
-  border-radius: 0px 0px 25px 25px;
-  padding: 10px 20px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 45px 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .collection__item-header{
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
   color: #ffffff;
-  padding-bottom: 10px;
 }
 .collection__item-price{
   font-weight: 400;
@@ -379,7 +389,16 @@ body{
   line-height: 130%;
   color: #ffffff;
 }
-
+.collection__item-btn{
+  padding: 5px 30px;
+  background-color: #6C9E12;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .collection__header{
     font-size: 32px;
@@ -406,15 +425,15 @@ body{
 
   .collection__item1{
     width: 210px;
-    height: 225px;
-    border-radius: 25px 25px 0px 0px;
+    height: 140px;
+    border-radius: 10px 10px 0px 0px;
     padding: 20px 10px 10px 10px;
   }
   .collection__item2{
     width: 210px;
-    height: 85px;
-    border-radius: 0px 0px 25px 25px;
-    padding: 10px 20px;
+    height: 140px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 25px 15px 20px 15px;
   }
  
 }
@@ -432,15 +451,15 @@ body{
   }
 
   .collection__item1{
-    width: 150px;
-    height: 160px;
-    border-radius: 25px 25px 0px 0px;
+    width: 180px;
+    height: 110px;
+    border-radius: 10px 10px 0px 0px;
   }
   .collection__item2{
-    width: 150px;
-    height: 60px;
-    border-radius: 0px 0px 25px 25px;
-    padding: 5px 10px;
+    width: 180px;
+    height: 130px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px 15px 20px 15px;
   }
   .collection__img{
     width: 100%;
@@ -521,6 +540,59 @@ body{
 
 
 /* Collection gallery*/
+
+/* фото наших клиентов */
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-height: 600px;
+  width: auto;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery img {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:active {
+  transform: scale(0.95);
+}
+
+.gallery-btn {
+  font-size: 1.5rem;
+  background-color: #6C9E12;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.gallery-btn:focus {
+  outline: none;
+}
+
+
+/* фото наших клиентов */
+
 /* delivery */
 .delivery{
   margin-top: 60px;
@@ -614,7 +686,7 @@ body{
   height: 550px;
   background: none;
   border: #8ED117 solid 2px;
-  border-radius: 30px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -644,7 +716,7 @@ body{
   font-weight: 300;
   font-size: 24px;
   line-height: 130%;
-  color: #ffffff !important;
+  color: #000000 !important;
   animation: glow 2s infinite;
 }
 .contacts__form-button__wrapper{
@@ -748,7 +820,9 @@ body{
   }
 }
 
-
+#success-message{
+  text-align: center;
+}
 /* contacts */
 
 

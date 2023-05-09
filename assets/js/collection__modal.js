@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const collectionItems = document.querySelectorAll(".collection__item");
+    const collectionItemBtns = document.querySelectorAll(".collection__item-btn");
     const galleryModal = document.getElementById("galleryModal");
     const close = document.querySelector(".close");
     const modalImage = document.getElementById("modalImage");
     const galleryThumbnails = document.getElementById("galleryThumbnails");
 
-    collectionItems.forEach((item) => {
-        item.addEventListener("click", function () {
-            const galleryId = this.getAttribute("data-gallery-id");
+    collectionItemBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const collectionItem = this.closest(".collection__item");
+            const galleryId = collectionItem.getAttribute("data-gallery-id");
             const hiddenGallery = document.querySelector(`.hidden-gallery[data-gallery-id="${galleryId}"]`);
             const images = hiddenGallery.querySelectorAll("img");
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ротанговый Рай</title>
+    <link rel="icon" href="/assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/fonts.css">
     <link rel="stylesheet" href="/assets/css/animate.css"/>
@@ -13,12 +14,11 @@
 <body>
   <header class="header" id="header">
       <div class="header-container">
-        <div class="logo"><a href="#intro"><img src="" alt="">Ротанговый Рай</a></div>
+        <div class="logo"><a href="#intro"><img src="/assets/img/logo.png" alt=""></a></div>
         <nav class="nav">
-          <a href="#company" class="nav-link">О компании</a>
-          <a href="#cases" class="nav-link">Кейсы</a>
-          <a href="#product" class="nav-link">О продукте</a>
-          <a href="#work" class="nav-link">Этапы работы</a>
+          <a href="#catalog" class="nav-link">Каталог</a>
+          <a href="#photos" class="nav-link">Живые фото</a>
+          <a href="#delivery" class="nav-link">Доставка</a>
           <a href="#request" class="nav-link">Оставить заявку</a>
         </nav>
         <div class="burger" id="burger">
@@ -33,7 +33,8 @@
       <div class="wrapper">
           <div class="intro">
               <div class="intro__header"><span>Садовая Мебель</span> для вашего дома и сада</div>
-              <div class="intro__text">Создайте атмосферу уюта и комфорта с эксклюзивной мебелью из натурального ротанга. Выберите свой стиль среди нашей обширной коллекции.</div>
+              <div class="intro__text">Создайте атмосферу уюта и комфорта с эксклюзивной мебелью из искусственного ротанга. Выберите свой стиль среди нашей коллекции.</div>
+              <div style="color: #8ED117; font-weight: 600; " class="intro__text">До конца Мая скидки на всю продукцию 10%</div>
               <div class="intro__button"><a href="">Посмотреть коллекцию</a></div>
           </div>
       </div>
@@ -42,31 +43,52 @@
 
   <div class="why">
     <div class="wrapper">
-      <p class="why__header">Почему выбирают мебель из ротанга?</p>
+      <p class="why__header">Почему выбирают мебель из искусственного ротанга?</p>
         <div class="why__wrapper">
           <div class="why__content">
-            <li class="why__text">Экологичность: "Мебель из ротанга изготавливается из натурального, экологически чистого материала."</li>
-            <li class="why__text">Прочность и долговечность: "Ротанг отличается высокой прочностью, устойчивостью к влаге и изменениям температуры."</li>
-            <li class="why__text">Уникальный дизайн: "Благодаря своей гибкости, ротанг позволяет создавать уникальные и изысканные формы мебели."</li>
-            <li class="why__text">Легкость и комфорт: "Мебель из ротанга легкая, удобная и практичная, что делает ее идеальным выбором для дома и сада."</li>
+            <li class="why__text">Легка в уборке</li>
+            <li class="why__text">Не боится мороза</li>
+            <li class="why__text">Подушки из влагозащитной ткани</li>
+            <li class="why__text">Высокая прочность, выдерживает 130кг</li>
+            <li class="why__text">Не высыхает и не трескается на солнце</li>
+            <li class="why__text">Любит дождь "Перфорированная структура"</li>
           </div>
           <img src="/assets/img/why__img.png" alt="" class="why__img">
       </div>
     </div>
   </div>
 
-  <div class="collection">
+  <div class="why">
+    <div class="wrapper">
+      <p class="why__header">Делая покупку у нас вы получаете:</p>
+        <div class="why__wrapper">
+          <div class="why__content">
+            <li class="why__text">Бесплатную доставку по Москве</li>
+            <li class="why__text">Быструю доставку по всей России</li>
+            <li class="why__text">Кашпо в подарок</li>
+            <li class="why__text">Подушки в подарок</li>
+            <li class="why__text">Неоновая подсветка для мебели в подарок</li>
+            <li class="why__text">Все комплекты мебели подобраны в одном цвете</li>
+            <li class="why__text">Также наши ротанговые диваны можно собрать под себя, как конструктор, увеличив количество посадочных мест!</li>
+          </div>
+          <img style="width: 250px;" src="/assets/img/why__img1.jpg" alt="" class="why__img">
+      </div>
+    </div>
+  </div>
+
+  <div id="catalog" class="collection">
     <div class="wrapper">
       <h1 class="collection__header">Наши коллекции</h1>
       <div class="collection__items">
         <!-- Card 1 -->
         <div class="collection__item" data-gallery-id="1">
           <div class="collection__item1">
-            <img src="/assets/img/item1.jpg" alt="" class="collection__img">
+            <img src="/assets/img/item1bg.png" alt="" class="collection__img">
           </div>
           <div class="collection__item2">
             <h1 class="collection__item-header">Кресло</h1>
-            <p class="collection__item-price">6 990₽</p>
+            <p class="collection__item-price"><s>8 000₽</s> 6 990₽</p>
+            <div class="collection__item-btn">Смотреть</div>
           </div>
         </div>
 
@@ -81,25 +103,80 @@
         <!-- Card 2 -->
         <div class="collection__item" data-gallery-id="2">
           <div class="collection__item1">
-            <img src="/assets/img/item2.jpg" alt="" class="collection__img">
+            <img src="/assets/img/item2bg.png" alt="" class="collection__img">
           </div>
           <div class="collection__item2">
-            <h1 class="collection__item-header">Кресло</h1>
-            <p class="collection__item-price">6 990₽</p>
+            <h1 class="collection__item-header">Диван двухместный</h1>
+            <p class="collection__item-price"><s>13 000₽</s> 10 990₽</p>
+            <div class="collection__item-btn">Смотреть</div>
           </div>
         </div>
 
         <div class="hidden-gallery" data-gallery-id="2">
-          <img src="/assets/img/item2.jpg" alt="Фото 1 товара 2">
-          <img src="/assets/img/item2_1.jpg" alt="Фото 2 товара 2">
-          <img src="/assets/img/item2_2.jpg" alt="Фото 3 товара 2">
-          <img src="/assets/img/item2_3.jpg" alt="Фото 3 товара 2">
-          <img src="/assets/img/item2_4.jpg" alt="Фото 3 товара 2">
+          <img src="/assets/img/item2.jpg" alt="Фото 1 товара 1">
+          <img src="/assets/img/item2_1.jpg" alt="Фото 2 товара 1">
+          <img src="/assets/img/item2_2.jpg" alt="Фото 3 товара 1">
+          <img src="/assets/img/item2_3.jpg" alt="Фото 4 товара 1">
+          <img src="/assets/img/item2_4.jpg" alt="Фото 5 товара 1">
         </div>
         <!-- Card 2 -->
+        <!-- Card 3 -->
+        <div class="collection__item" data-gallery-id="3">
+          <div class="collection__item1">
+            <img src="/assets/img/item3bg.png" alt="" class="collection__img">
+          </div>
+          <div class="collection__item2">
+            <h1 class="collection__item-header">Диван трехместный</h1>
+            <p class="collection__item-price"><s>15 000₽</s> 12 990₽</p>
+            <div class="collection__item-btn">Смотреть</div>
+          </div>
+        </div>
 
+        <div class="hidden-gallery" data-gallery-id="3">
+          <img src="/assets/img/item3.jpeg" alt="Фото 1 товара 1">
+          <img src="/assets/img/item3_1.jpeg" alt="Фото 2 товара 1">
+          <img src="/assets/img/item3_2.jpeg" alt="Фото 3 товара 1">
+          <img src="/assets/img/item3_3.jpeg" alt="Фото 4 товара 1">
+          <img src="/assets/img/item3_4.jpeg" alt="Фото 5 товара 1">
+        </div>
+        <!-- Card 3 -->
+        <!-- Card 4 -->
+        <div class="collection__item" data-gallery-id="4">
+          <div class="collection__item1">
+            <img src="/assets/img/item4bg.png" alt="" class="collection__img">
+          </div>
+          <div class="collection__item2">
+            <h1 class="collection__item-header">Диван угловой</h1>
+            <p class="collection__item-price"><s>27 000₽</s> 23 000₽</p>
+            <div class="collection__item-btn">Смотреть</div>
+          </div>
+        </div>
 
+        <div class="hidden-gallery" data-gallery-id="4">
+          <img src="/assets/img/item4.jpg" alt="Фото 1 товара 1">
+        </div>
+        <!-- Card 4 -->
+        <!-- Card 5 -->
+        <div class="collection__item" data-gallery-id="5">
+          <div class="collection__item1">
+            <img src="/assets/img/item5bg.png" alt="" class="collection__img">
+          </div>
+          <div class="collection__item2">
+            <h1 class="collection__item-header">Столик садовый</h1>
+            <p class="collection__item-price"><s>5 000₽</s> 2 999₽</p>
+            <div class="collection__item-btn">Смотреть</div>
+          </div>
+        </div>
 
+        <div class="hidden-gallery" data-gallery-id="5">
+          <img src="/assets/img/item5.jpeg" alt="Фото 1 товара 1">
+          <img src="/assets/img/item5_1.jpeg" alt="Фото 2 товара 1">
+          <img src="/assets/img/item5_2.jpeg" alt="Фото 3 товара 1">
+          <img src="/assets/img/item5_3.jpeg" alt="Фото 4 товара 1">
+          <img src="/assets/img/item5_4.jpeg" alt="Фото 5 товара 1">
+        </div>
+        <!-- Card 5 -->
+        
         <div class="gallery-modal" id="galleryModal">
           <span class="close">&times;</span>
           <div class="gallery-content">
@@ -107,62 +184,120 @@
               <div id="galleryThumbnails" class="gallery-thumbnails"></div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
 
+  <!-- фото наших клиентов -->
 
-  <div class="delivery">
+  <div style="margin-top: 50px;" id="photos" class="wrapper">
+    <h1 class="why__header">Фотографии наших клиентов</h1>
+    <div class="gallery-container">
+      <button class="gallery-btn gallery-btn-prev">&lt;</button>
+      <div class="gallery">
+          <img src="/assets/img/gallery/2.jpg" alt="Image 1">
+          <img src="/assets/img/gallery/3.jpg" alt="Image 2">
+          <img src="/assets/img/gallery/4.jpg" alt="Image 3">
+          <img src="/assets/img/gallery/5.jpg" alt="Image 3">
+          <img src="/assets/img/gallery/6.jpg" alt="Image 3">
+          <img src="/assets/img/gallery/7.jpg" alt="Image 3">
+          <img src="/assets/img/gallery/8.jpg" alt="Image 3">
+          <!-- Добавьте больше изображений по аналогии -->
+      </div>
+      <button class="gallery-btn gallery-btn-next">&gt;</button>
+    </div>
+  </div>
+  <script src="/assets/js/gallery.js"></script>
+  <!-- фото наших клиентов -->
+
+
+
+  <div id="delivery" class="delivery">
     <div class="wrapper delivery__wrapper">
       <h1 class="delivery__header">Доставка и оплата</h1>
-      <p class="delivery__text">Мы предлагаем быструю и надежную доставку по всей стране. Вы можете оплатить свой заказ удобным для вас способом: наличными, банковской картой или электронными деньгами.</p>
+      <p class="delivery__text">Мы предлагаем быструю и надежную доставку по всей стране. Доставка по Москве бесплатно. Вы можете оплатить свой заказ удобным для вас способом: наличными, банковской картой или электронными деньгами.</p>
     </div>
   </div>
 
-  <div class="contacts">
+  <div id="request" class="contacts">
     <div class="wrapper">
       <h1 class="contacts__header">Контакты и обратная связь</h1>
       <div class="contacts__wrapper">
         <div class="contacts__texts">
           <p class="contacts__text">Если у вас возникли вопросы или вы хотите узнать больше о нашей продукции, свяжитесь с нами. Мы будем рады помочь!</p>
           <p class="contacts__contacts">
+            Работаем без выходных<br>
+            Менеджер свяжется с вами в рабочее с 09:00 до 20:00<br><br>
             Контактная информация: <br>
-            Москва, ул. кремлевская 25/4 <br>
-            +7(999)-999-99-99 <br>
-            vk.com(Иконки)</p>
+            улица Кирова, 40, Люберцы, Московская область<br>
+            
+            <!-- +7(999)-999-99-99 <br>
+            vk.com(Иконки)</p> -->
         </div>
-        <form class="contacts__form">
+        <form class="contacts__form" id="contacts-form" onsubmit="submitForm(event)">
           <h1 class="contacts__form-header">Свяжитесь с нами</h1>
           <div class="contacts__form-fields">
-            <label for="name" class="contacts__form-fields__label">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя" class="contacts__form-fields__modal">
-            <label for="name" class="contacts__form-fields__label">Город:</label>
-            <input type="text" name="city" id="city" placeholder="Город" class="contacts__form-fields__modal">
-            <label for="phone" class="contacts__form-fields__label">Номер телефона:</label>
-            <input type="tel" name="phone" id="phone" placeholder="Номер телефона" class="contacts__form-fields__modal">
+              <label for="name" class="contacts__form-fields__label">Имя:</label>
+              <input type="text" name="name" id="name" placeholder="Имя" class="contacts__form-fields__modal" required>
+              <label for="city" class="contacts__form-fields__label">Город:</label>
+              <input type="text" name="city" id="city" placeholder="Город" class="contacts__form-fields__modal">
+              <label for="phone" class="contacts__form-fields__label">Номер телефона:</label>
+              <input type="tel" name="phone" id="phone" placeholder="Номер телефона" class="contacts__form-fields__modal">
           </div>
           <div class="contacts__form-button__wrapper">
-            <button type="submit" class="contacts__form-submit-btn">Отправить</button>
-            <div id="success-message" style="display: none;">Заявка успешно отправлена!</div>
+              <button type="submit" class="contacts__form-submit-btn">Отправить</button>
           </div>
-        </form>
+          <div id="success-message" style="display: none;">Заявка успешно отправлена!</div>
+      </form>
       </div>
     </div>
   </div>
+  <!-- <script>
+    function submitForm(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
 
+            fetch('send_to_telegram.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    document.getElementById('success-message').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+  </script> -->
 
-
-
-
-
-
-
-
-
-
-
-
+  <script>
+    function submitForm(event) {
+    event.preventDefault();
+    const form = document.getElementById('contacts-form');
+    const successMessage = document.getElementById('success-message');
+    
+    const formData = new FormData(form);
+    
+    fetch('amocrm.php', {
+      method: 'POST',
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          successMessage.style.display = 'block';
+        } else {
+          console.error('Ошибка при отправке данных:', data.error);
+        }
+      })
+      .catch((error) => {
+        console.error('Ошибка при отправке формы:', error);
+      });
+  }
+  </script>
 
 
 
@@ -170,13 +305,11 @@
   <footer class="custom-footer">
     <div class="custom-footer-container">
         <div class="custom-logo-container">
-            Ротанговый рай
+            <img class="custom-logo" src="/assets/img/logo.png" alt="">
         </div>
         <div class="custom-links-container">
-          <a href="#company">О компании</a>
-          <a href="#cases">Кейсы</a>
-          <a href="#product">О продукте</a>
-          <a href="#work">Этапы работы</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#delivery">Доставка</a>
           <a href="#request">Оставить заявку</a>
         </div>
         <div class="custom-social-icons">
@@ -189,6 +322,52 @@
         <p>&copy; 2023 Все права защищены.</p>
     </div>
   </footer>
+
+  <script>
+    const phoneInputs = document.querySelectorAll('input[type="tel"]');
+    
+    phoneInputs.forEach((phoneInput) => {
+      phoneInput.addEventListener('input', () => {
+        let phoneValue = phoneInput.value;
+    
+        // Удаляем все символы, кроме цифр
+        phoneValue = phoneValue.replace(/\D/g, '');
+    
+        // Обрезаем строку, если она слишком длинная
+        if (phoneValue.length > 11) {
+          phoneValue = phoneValue.substr(0, 11);
+        }
+    
+        // Добавляем знаки плюса и скобок, если их нет
+        if (phoneValue.length > 0 && phoneValue.charAt(0) !== '+') {
+          phoneValue = '+' + phoneValue;
+        }
+        if (phoneValue.length > 1 && phoneValue.charAt(1) !== '7') {
+          phoneValue = '+7' + phoneValue.substr(1);
+        }
+        if (phoneValue.length > 2 && phoneValue.charAt(2) !== '(') {
+          phoneValue = phoneValue.substr(0, 2) + '(' + phoneValue.substr(2);
+        }
+        if (phoneValue.length > 6 && phoneValue.charAt(6) !== ')') {
+          phoneValue = phoneValue.substr(0, 6) + ')' + phoneValue.substr(6);
+        }
+        if (phoneValue.length > 7 && phoneValue.charAt(7) !== ' ') {
+          phoneValue = phoneValue.substr(0, 7) + ' ' + phoneValue.substr(7);
+        }
+        if (phoneValue.length > 11 && phoneValue.charAt(11) !== '-') {
+          phoneValue = phoneValue.substr(0, 11) + '-' + phoneValue.substr(11);
+        }
+        if (phoneValue.length > 14 && phoneValue.charAt(14) !== '-') {
+          phoneValue = phoneValue.substr(0, 14) + '-' + phoneValue.substr(14);
+        }
+    
+        // Записываем отформатированный номер в input
+        phoneInput.value = phoneValue;
+      });
+    });
+    
+    </script>
+    <script src="/assets/js/linkscroll.js"></script>
     <script src="/assets/js/collection__modal.js"></script>
     <script src="/assets/js/animate.js"></script>
     <script src="/assets/js/burger.js"></script>
