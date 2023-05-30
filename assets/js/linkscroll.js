@@ -14,7 +14,7 @@ navLinks.forEach(function(link) {
     const section = document.querySelector(sectionId);
 
     // скроллим до секции с дополнительным отступом сверху на 80 пикселей
-    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - 95;
+    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - 76;
     window.scrollTo({top: sectionTop, behavior: "smooth"});
   });
 });
@@ -26,7 +26,7 @@ window.addEventListener("scroll", function() {
   navLinks.forEach(function(link) {
     var section = document.querySelector(link.hash);
 
-    if (section.offsetTop - 95 <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+    if (section.offsetTop - 76 <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
 
       link.classList.add("active");
     } else {
@@ -50,7 +50,7 @@ for (const link of links) {
     const target = document.getElementById(targetId);
 
     // Calculate the target's position from the top of the page
-    const targetPosition = target.offsetTop - 95;
+    const targetPosition = target.offsetTop - 76;
 
     // Scroll smoothly to the target position
     window.scrollTo({
