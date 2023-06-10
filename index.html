@@ -131,8 +131,12 @@
 
       </script>
 
+
+
+
+
       <script>
-        window.addEventListener('deviceorientation', (event) => {
+        function handleMotion(event) {
     const x = event.beta;  // Диапазон от -180 до 180
     const y = event.gamma; // Диапазон от -90 до 90
 
@@ -144,7 +148,22 @@
         const element = document.getElementById(`avitobg${i}`);
         element.style.transform = `translate(${normalizedX * 10}px, ${normalizedY * 10}px)`;
     }
-});
+}
+
+// Проверяем, доступно ли событие ориентации устройства
+if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+    // iOS 13+
+    DeviceOrientationEvent.requestPermission()
+        .then(response => {
+            if (response == 'granted') {
+                window.addEventListener('deviceorientation', handleMotion, true);
+            }
+        })
+        .catch(console.error);
+} else {
+    // не iOS 13+
+    window.addEventListener('deviceorientation', handleMotion, true);
+}
 
       </script>
 
