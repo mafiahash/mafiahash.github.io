@@ -1,0 +1,442 @@
+/* * {
+  border: 1px solid red !important;
+} */
+body{
+    background-color: #000000;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    overflow: hidden;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #2F105D;
+}
+::-webkit-scrollbar {
+  height: 8px;
+  background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #2F105D;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(50% 50% at 50% 50%, #8542BA 0%, #2F105D 100%);
+  z-index: 9999; /* Задаем высокий z-index для лоадера */
+}
+
+.loader-container {
+  text-align: center;
+}
+
+.loader-logo {
+  width: 400px; /* Измените размер логотипа по вашему усмотрению */
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* intro */
+.intro{
+  height: 100vh;
+  background-image: url("/assets/img/background.svg"), radial-gradient(50% 50.00% at 50% 50.00%, #8542BA 0%, #2F105D 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.intro__logo{
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.intro__artist{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  max-width: 760px;
+  /* height: 812px; */
+}
+.intro__artist-name{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro__artist-btn{
+  width: 500px;
+  height: 100px;
+  border-radius: 50px 0px;
+  background: #000;
+  box-shadow: 2px 4px 4px 0px rgba(158, 0, 255, 0.40);
+  color: #FFF;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 40px;
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro__artist-btn span{
+  font-size: 24px;
+  font-weight: lighter;
+}
+.intro p{
+  position: absolute;
+  width: 600px;
+  height: 60px;
+  border-radius: 20px;
+  background: #000;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro__line{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__artist{
+    max-width: 600px;
+  }
+  .intro__artist-btn{
+    width: 450px;
+    height: 90px;
+    font-size: 36px;
+    line-height: 30px;
+  }
+  .intro__artist-btn span{
+    font-size: 21px;
+  }
+  .intro p{
+    width: 500px;
+    height: 60px;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .intro__artist{
+    max-width: 550px;
+  }
+  .intro__artist-btn{
+    width: 380px;
+    height: 75px;
+    font-size: 30px;
+    line-height: 25px;
+  }
+  .intro__artist-btn span{
+    font-size: 17px;
+  }
+  .intro p{
+    width: 425px;
+    height: 55px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .intro__artist{
+    max-width: 500px;
+  }
+  .intro__artist-btn{
+    width: 320px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .intro__artist-btn span{
+    font-size: 14px;
+  }
+  .intro p{
+    width: 360px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+/* intro */
+
+/* concerts */
+.concerts h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 7.2px;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex; /* Добавлено */
+  gap: 20px;
+}
+
+.slide {
+  /* flex: 0 0 100%; */
+  scroll-snap-align: start;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+}
+
+.concert__card{
+  position: relative;
+  min-width: 360px;
+  height: 480px;
+  border-radius: 25px;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #8542BA 0%, #2F105D 100%);
+}
+.concert__card-artist{
+  width: 310px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.concert__card p{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.concert__card a{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 50px; 
+  border-radius: 25px 0px;
+  background: #000;
+  box-shadow: 2px 4px 4px 0px rgba(158, 0, 255, 0.40);
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.concert__card a span{
+  font-size: 14px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 410px) {
+  .concert__card{
+    min-width: 320px;
+  }
+  .concert__card-artist{
+    width: 240px;
+  }
+}
+/* concerts */
+
+/* map */
+.map{
+  position: relative;
+  height: 100vh;
+}
+.map h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 7.2px;
+  text-align: center;
+}
+#map{
+  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 1404px;
+  min-height: 573px;
+}
+.map h2 a{
+  font-size: 36px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@media screen and (max-width: 510px) {
+  .map h2 a{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .map h2 a{
+    font-size: 20px;
+  }
+}
+/* map */
+
+
+
+
+
+
+
+
+/* footer */
+.custom-footer {
+  background-color: #0F0F0F;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.custom-footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.custom-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-logo {
+  max-width: 150px;
+  display: block;
+}
+
+.custom-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-links-container a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin: 5px;
+}
+
+.custom-links-container a:hover {
+  color: #8542BA;
+}
+
+.custom-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-social-icons a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin: 0 10px;
+}
+
+.custom-social-icons a:hover {
+  color: #8542BA;
+}
+
+.custom-copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .custom-footer-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+/* footer */

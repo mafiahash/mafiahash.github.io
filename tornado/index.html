@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TornadoClub</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/animate.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-container">
+      <img class="loader-logo" src="/assets/img/logo.svg" alt="">
+    </div>
+  </div>
+
+  
+
+  <div class="intro">
+    <img class="intro__logo" src="/assets/img/logo.svg" alt="">
+    <img src="/assets/img/XOLIDAYBOY.svg" alt="" class="intro__artist-name">
+    <img class="intro__artist" src="/assets/img/artist__intro.png" alt="">
+    <a href="" class="intro__artist-btn">XOLIDAYBOY<br><span>Купить</span></a>
+    <p>15.07.2023 Пляжная 7/2 START: 22:00</p>
+    <img class="intro__line" src="/assets/img/intro__line.svg" alt="">
+  </div>
+  <div id="tickets" class="wrapper">
+    <div class="concerts">
+      <h1>КОНЦЕРТЫ</h1>
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slides">
+
+              <div class="slide">
+                <div class="concert__card">
+                  <img src="/assets/img/concert__card-bg.svg" alt="">
+                  <img class="concert__card-artist" src="/assets/img/AMCHI.png" alt="">
+                  <p>30<br>JUNE</p>
+                  <a target="_blank" href="https://ticketscloud.com/v1/widgets/common?token=eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjJiZGFlMDk2MWU2ZDViNzQ0ZjBiMzQwIn0.d733Jp3-fdAWFnVqK8Hk6HZPtY_zUzXdRv6B9UWbyXw&lang=ru&event=6492c450e1d72841d0141364&s=1">AMCHI<br><span>Купить</span></a>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="concert__card">
+                  <img src="/assets/img/concert__card-bg.svg" alt="">
+                  <img class="concert__card-artist" src="/assets/img/luxor.png" alt="">
+                  <p>07<br>JULY</p>
+                  <a target="_blank" href="https://ticketscloud.com/v1/widgets/common?token=eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjJiZGFlMDk2MWU2ZDViNzQ0ZjBiMzQwIn0.d733Jp3-fdAWFnVqK8Hk6HZPtY_zUzXdRv6B9UWbyXw&lang=ru&event=6490a99b1d2ef710d93dc524&s=1">Luxor<br><span>Купить</span></a>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="concert__card">
+                  <img src="/assets/img/concert__card-bg.svg" alt="">
+                  <img class="concert__card-artist" src="/assets/img/infinity.png" alt="">
+                  <p>08<br>JULY</p>
+                  <a target="_blank" href="https://ticketscloud.com/v1/widgets/common?token=eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjJiZGFlMDk2MWU2ZDViNzQ0ZjBiMzQwIn0.d733Jp3-fdAWFnVqK8Hk6HZPtY_zUzXdRv6B9UWbyXw&lang=ru&event=6490b4c2eca8c5ea23c53bf1&s=1">Инфинити<br><span>Купить</span></a>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="concert__card">
+                  <img src="/assets/img/concert__card-bg.svg" alt="">
+                  <img class="concert__card-artist" src="/assets/img/XOLIDAYBOY.png" alt="">
+                  <p>15<br>JULY</p>
+                  <a target="_blank" href="https://ticketscloud.com/v1/widgets/common?token=eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjJiZGFlMDk2MWU2ZDViNzQ0ZjBiMzQwIn0.d733Jp3-fdAWFnVqK8Hk6HZPtY_zUzXdRv6B9UWbyXw&lang=ru&event=6490b7a82986c1ddb8fb105c&s=1">XOLIDAYBOY<br><span>Купить</span></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="controls">
+              <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+              <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+        <script>
+          function changeSlide(n) {
+            const container = document.querySelector('.slider-container');
+            container.scrollLeft += n * container.offsetWidth;
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="map">
+      <h1>АДРЕС</h1>
+      <img id="map" src="/assets/img/map.png" alt="">
+      <h2><a href="https://yandex.ru/maps/-/CCUHIWhqLC">Пляжная 7/2</a></h2>
+    </div>
+  </div>
+
+
+  <footer class="custom-footer">
+    <div class="custom-footer-container">
+        <div class="custom-logo-container">
+            <a href="/index.html"><img src="/assets/img/logo.svg" alt="Логотип" class="custom-logo"></a>
+        </div>
+        <div class="custom-links-container">
+            <a href="#tickets">Билеты</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#map">Карта</a>
+        </div>
+        <div class="custom-social-icons">
+          <a target="_blank" href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href="https://vk.com/club_tornado_yeisk"><i class="fa-brands fa-vk"></i></a>
+        </div>
+    </div>
+    <div class="custom-copyright">
+        <p>&copy; 2023 Все права защищены.</p>
+    </div>
+  </footer>
+  <script>
+   window.addEventListener('load', function() {
+      var loader = document.getElementById('loader');
+      loader.style.display = 'none'; // Скрываем лоадер после полной загрузки страницы
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/f8d44e1c04.js" crossorigin="anonymous"></script>
+</body>
+</html>
