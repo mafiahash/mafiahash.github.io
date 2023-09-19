@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AviRoom</title>
+    <title>ProBassein</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/fonts.css">
     <link rel="stylesheet" href="/assets/css/animate.css"/>
@@ -13,219 +14,308 @@
 <body>
     <header class="header" id="header">
         <div class="header-container">
-          <div class="logo"><a href="#intro"><img src="/assets/img/logo.svg" alt=""></a></div>
-          <nav class="nav">
-            <a href="#about" class="nav-link">Продвижение</a>
-            <a href="#services" class="nav-link">Обучение</a>
-          </nav>
-          <div class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+            <div class="logo"><a href="#intro"><img src="/assets/img/logo.svg" alt=""></a></div>
+            <nav class="nav">
+                <a href="#services" class="nav-link">Услуги</a>
+                <a href="#prices" class="nav-link">Цена</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+                <a href="tel:+79999999999" class="nav-link header__phone header__phone-responsive">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <g clip-path="url(#clip0_614_5997)">
+                    <path d="M28.0595 21.1198L25.0608 18.1211C24.7417 17.7954 24.3608 17.5367 23.9405 17.3601C23.5202 17.1834 23.0688 17.0925 22.6129 17.0925C22.1569 17.0925 21.7056 17.1834 21.2852 17.3601C20.8649 17.5367 20.484 17.7954 20.165 18.1211L19.5652 18.7208C16.5447 16.2001 13.7552 13.4148 11.2301 10.3979L11.842 9.78593C12.4908 9.13645 12.8552 8.25601 12.8552 7.33802C12.8552 6.42003 12.4908 5.53958 11.842 4.8901L8.88006 1.92812C8.22443 1.29108 7.34629 0.934723 6.43214 0.934723C5.51799 0.934723 4.63985 1.29108 3.98422 1.92812L2.34412 3.56822C1.55805 4.36474 1.06858 5.40651 0.957227 6.52003C0.845874 7.63355 1.11936 8.75162 1.73214 9.68802C6.62335 17.0516 12.936 23.3643 20.2996 28.2555C21.236 28.8682 22.354 29.1417 23.4676 29.0304C24.5811 28.919 25.6229 28.4296 26.4194 27.6435L28.0595 26.0156C28.3852 25.6965 28.6439 25.3157 28.8205 24.8953C28.9971 24.475 29.0881 24.0236 29.0881 23.5677C29.0881 23.1118 28.9971 22.6604 28.8205 22.2401C28.6439 21.8197 28.3852 21.4389 28.0595 21.1198Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_614_5997">
+                        <rect width="30" height="30" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>
+            </nav>
+            <a href="tel:+79999999999" class="header__phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <g clip-path="url(#clip0_614_5997)">
+                <path d="M28.0595 21.1198L25.0608 18.1211C24.7417 17.7954 24.3608 17.5367 23.9405 17.3601C23.5202 17.1834 23.0688 17.0925 22.6129 17.0925C22.1569 17.0925 21.7056 17.1834 21.2852 17.3601C20.8649 17.5367 20.484 17.7954 20.165 18.1211L19.5652 18.7208C16.5447 16.2001 13.7552 13.4148 11.2301 10.3979L11.842 9.78593C12.4908 9.13645 12.8552 8.25601 12.8552 7.33802C12.8552 6.42003 12.4908 5.53958 11.842 4.8901L8.88006 1.92812C8.22443 1.29108 7.34629 0.934723 6.43214 0.934723C5.51799 0.934723 4.63985 1.29108 3.98422 1.92812L2.34412 3.56822C1.55805 4.36474 1.06858 5.40651 0.957227 6.52003C0.845874 7.63355 1.11936 8.75162 1.73214 9.68802C6.62335 17.0516 12.936 23.3643 20.2996 28.2555C21.236 28.8682 22.354 29.1417 23.4676 29.0304C24.5811 28.919 25.6229 28.4296 26.4194 27.6435L28.0595 26.0156C28.3852 25.6965 28.6439 25.3157 28.8205 24.8953C28.9971 24.475 29.0881 24.0236 29.0881 23.5677C29.0881 23.1118 28.9971 22.6604 28.8205 22.2401C28.6439 21.8197 28.3852 21.4389 28.0595 21.1198Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_614_5997">
+                    <rect width="30" height="30" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
-    <div class="avitobg">
-        <img src="/assets/img/avitobg1.svg" alt="" id="avitobg1">
-        <img src="/assets/img/avitobg2.svg" alt="" id="avitobg2">
-        <img src="/assets/img/avitobg3.svg" alt="" id="avitobg3">
-        <img src="/assets/img/avitobg4.svg" alt="" id="avitobg4">
-        <img src="/assets/img/avitobg1.svg" alt="" id="avitobg5">
-        <img src="/assets/img/avitobg2.svg" alt="" id="avitobg6">
-        <img src="/assets/img/avitobg3.svg" alt="" id="avitobg7">
-        <img src="/assets/img/avitobg4.svg" alt="" id="avitobg8">
-    </div>
-
-    <div class="wrapper">
-        <div class="intro">
-            <h1><span>Aviroom</span>: Ваш эксперт в мире <span>Авито</span> и обучении профессии <span>Авитолога</span></h1>
-        </div>
-    </div>
-
-    <div class="wrapper">
-        <div class="about">
-            <div class="about__texts">
-                <h1>О нас</h1>
-                <p>Мы – профессионалы в мире Авито, которые помогают людям успешно продвигать свои объявления и учат тех, кто хочет стать Авитологом. Мы знаем все тонкости работы с этой платформой и готовы делиться своими знаниями и опытом.
-                    <br> <br>
-                    Мы предлагаем высококачественные услуги по продвижению объявлений на Авито и обучению профессии Авитолог. Узнайте больше о том, что мы можем предложить вам, перейдя по ссылкам ниже.</p>
-            </div>
-            <img src="/assets/img/about.svg" alt="">
-        </div>
-    </div>
-
-    <div class="wrapper">
-        <div class="links">
-            <div class="link">
-                <img src="/assets/img/link__business.svg" alt="">
-                <div class="linkbg"></div>
-                <div class="link__texts">
-                    <p>Услуги продвижения: Увеличьте видимость ваших объявлений и привлеките больше клиентов.</p>
-                    <a href="">Перейти</a>
+    <div style="background-image: url(/assets/img/introbg.png); background-size: cover; background-position: center; min-height: 100vh; position: relative;">
+        <div class="wrapper">
+            <div class="intro">
+                <div class="intro__texts">
+                    <h1>Рекорды ставят в чистой воде</h1>
+                    <p>Техническое обсулуживание систем водо-подготовки от PROBassein</p>
                 </div>
-            </div>
-            <div class="link">
-                <img src="/assets/img/link__student.svg" alt="">
-                <div class="linkbg"></div>
-                <div class="link__texts">
-                    <p>Обучение Авитологии: Профессия будущего уже сегодня.</p>
-                    <a href="">Перейти</a>
+                <div class="intro__advantages">
+                    <div class="intro__advantage">
+                        <img src="/assets/img/support_413086 1.svg" alt="">
+                        <p>Круглосуточная поддержка</p>
+                    </div>
+                    <div class="intro__advantage">
+                        <img src="/assets/img/diamond_3003952 1.svg" alt="">
+                        <p>Индивидуальный подход</p>
+                    </div>
+                    <div class="intro__advantage">
+                        <img src="/assets/img/dollar_846023 1.svg" alt="">
+                        <p>Доступные цены</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div style="position: absolute; background: linear-gradient(180deg, #FFF 0%, #FFF 100%); filter: blur(15px); height: 100px; width: 200%; bottom: 0; transform: translate(-10%,50%);" class="div"></div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="services">
+            <h1>ОСНОВНЫЕ УСЛУГИ</h1>
+            <div class="services__items">
+                <div class="services__item">
+                    <img src="/assets/img/image 2.png" alt="">
+                    <div class="services__items-texts">
+                        <h1>Оборудование и расходные материалы</h1>
+                        <p>Продажа оборудования, расходников и средств для очистки воды</p>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <img src="/assets/img/image 2.png" alt="">
+                    <div class="services__items-texts">
+                        <h1>Оборудование и расходные материалы</h1>
+                        <p>Продажа оборудования, расходников и средств для очистки воды</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer class="custom-footer">
-        <div class="custom-footer-container">
-            <div class="custom-logo-container">
-                <img src="/assets/img/logo.svg" alt="Логотип" class="custom-logo">
-            </div>
-            <div class="custom-links-container">
-                <a href="#about">Продвижение</a>
-                <a href="#services">Обучение</a>
-            </div>
-            <div class="custom-social-icons">
-              <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a target="_blank" href="#"><i class="fa-brands fa-telegram"></i></a>
-              <a target="_blank" href="#"><i class="fa-brands fa-telegram"></i></a>
+    <div style="background-image: url(/assets/img/info.png); background-size: cover; background-position: center; position: relative;">
+        <div class="wrapper">
+            <div class="info">
+                <div class="info__texts">
+                    <h1>Регламент индивидуален для каждого бассейна</h1>
+                    <p>В зависимости от технических особенностей, состояния бассеина и поставленных задач, наши специалисты разрабатывают индивидуальный технический регламент для дальнейшего обслуживания.</p>
+                    <a href="">Расчет регламента</a>
+                </div>
+                <img src="/assets/img/info__person.png" alt="">
             </div>
         </div>
-        <div class="custom-copyright">
-            <p>&copy; 2023 Все права защищены.</p>
+    </div>
+
+    <div class="wrapper">
+        <div class="price">
+            <h1>СТОИМОСТЬ ОБСЛУЖИВАНИЯ БАССЕЙНОВ</h1>
+            <div class="price__cards">
+                <div class="price__card">
+                    <h1>Разовое</h1>
+                    <p><span>от 4 000</span>₽/мес</p>
+                    <p>Выездов: 2 раза за неделю</p>
+                    <hr>
+                    <p>Выезд: День через три</p>
+                    <hr>
+                    <p>Разовый контракт</p>
+                    <div style="border-radius: 10px; background: #FFF; box-shadow: 0px 0px 4px 0px rgba(14, 82, 183, 0.50); width: 100%; min-height: 100px; position: absolute; top: 0; left: 0; z-index: 1;" ></div>
+                </div>
+                <div class="price__card">
+                    <h1>Разовое</h1>
+                    <p><span>от 4 000</span>₽/мес</p>
+                    <p>Выездов: 2 раза за неделю</p>
+                    <hr>
+                    <p>Выезд: День через три</p>
+                    <hr>
+                    <p>Разовый контракт</p>
+                    <div style="border-radius: 10px; background: #FFF; box-shadow: 0px 0px 4px 0px rgba(14, 82, 183, 0.50); width: 100%; min-height: 100px; position: absolute; top: 0; left: 0; z-index: 1;" ></div>
+                </div>
+                <div class="price__card">
+                    <h1>Разовое</h1>
+                    <p><span>от 4 000</span>₽/мес</p>
+                    <p>Выездов: 2 раза за неделю</p>
+                    <hr>
+                    <p>Выезд: День через три</p>
+                    <hr>
+                    <p>Разовый контракт</p>
+                    <div style="border-radius: 10px; background: #FFF; box-shadow: 0px 0px 4px 0px rgba(14, 82, 183, 0.50); width: 100%; min-height: 100px; position: absolute; top: 0; left: 0; z-index: 1;" ></div>
+                </div>
+                
+            </div>
         </div>
-      </footer>
+    </div>
 
+    <div class="wrapper">
+        <div class="price__info">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>1. Ежедневное обслуживание</h1>
+                        <ul>
+                            <li>• Обеспечение качества воды в соответствии с нормами и требованиями СП 3.3686-21</li>
+                            <li>• Поставка химических реагентов для системы водоподготовки</li>
+                            <li>• Визуальный осмотр и контроль состояния бассейна</li>
+                            <li>• Проверка и корректировка показателей химических реагентов, температуры и уровня воды</li>
+                            <li>• Очистка воды от загрязнений и очистка стен и дна бассейна с использованием водного робота-пылесоса</li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>1. Ежедневное обслуживание</h1>
+                        <ul>
+                            <li>• Обеспечение качества воды в соответствии с нормами и требованиями СП 3.3686-21</li>
+                            <li>• Поставка химических реагентов для системы водоподготовки</li>
+                            <li>• Визуальный осмотр и контроль состояния бассейна</li>
+                            <li>• Проверка и корректировка показателей химических реагентов, температуры и уровня воды</li>
+                            <li>• Очистка воды от загрязнений и очистка стен и дна бассейна с использованием водного робота-пылесоса</li>
+                        </ul>
+                    </div>
+                </div>
 
-      <script>
-        window.onload = function() {
-  var positions = [
-    {x: 969, y: 848},
-    {x: 380, y: 120},
-    {x: 1470, y: 250},
-    {x: 1322, y: 117},
-    {x: 830, y: 210},
-    {x: 1500, y: 760},
-    {x: 615, y: 630},
-    {x: 210, y: 760}
-  ]; // Замените значениями, где вы хотите разместить ваши круги
-
-  for (var i = 1; i <= 8; i++) {
-    var circle = document.getElementById("avitobg" + i);
-    circle.style.left = positions[i-1].x + 'px';
-    circle.style.top = positions[i-1].y + 'px';
-  }
-}
-
-      </script>
-      <script>
-        document.addEventListener('mousemove', (event) => {
-    const x = event.clientX / window.innerWidth;
-    const y = event.clientY / window.innerHeight;
-
-    for(let i = 1; i <= 8; i++) {
-        const element = document.getElementById(`avitobg${i}`);
-        element.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
-    }
-});
-
-      </script>
-
-
-
-
-
-      <script>
-        function handleMotion(event) {
-    const x = event.beta;  // Диапазон от -180 до 180
-    const y = event.gamma; // Диапазон от -90 до 90
-
-    // Так как x и y могут быть отрицательными, мы хотим нормализовать их в диапазоне от 0 до 1
-    const normalizedX = (x + 180) / 360;
-    const normalizedY = (y + 90) / 180;
-
-    for(let i = 1; i <= 8; i++) {
-        const element = document.getElementById(`avitobg${i}`);
-        element.style.transform = `translate(${normalizedX * 10}px, ${normalizedY * 10}px)`;
-    }
-}
-
-// Проверяем, доступно ли событие ориентации устройства
-if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-    // iOS 13+
-    DeviceOrientationEvent.requestPermission()
-        .then(response => {
-            if (response == 'granted') {
-                window.addEventListener('deviceorientation', handleMotion, true);
-            }
-        })
-        .catch(console.error);
-} else {
-    // не iOS 13+
-    window.addEventListener('deviceorientation', handleMotion, true);
-}
-
-      </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div> 
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>          
+        </div>
+    </div>
 
 
     <script>
-        const phoneInputs = document.querySelectorAll('input[type="tel"]');
-        
-        phoneInputs.forEach((phoneInput) => {
-          phoneInput.addEventListener('input', () => {
-            let phoneValue = phoneInput.value;
-        
-            // Удаляем все символы, кроме цифр
-            phoneValue = phoneValue.replace(/\D/g, '');
-        
-            // Обрезаем строку, если она слишком длинная
-            if (phoneValue.length > 11) {
-              phoneValue = phoneValue.substr(0, 11);
-            }
-        
-            // Добавляем знаки плюса и скобок, если их нет
-            if (phoneValue.length > 0 && phoneValue.charAt(0) !== '+') {
-              phoneValue = '+' + phoneValue;
-            }
-            if (phoneValue.length > 1 && phoneValue.charAt(1) !== '7') {
-              phoneValue = '+7' + phoneValue.substr(1);
-            }
-            if (phoneValue.length > 2 && phoneValue.charAt(2) !== '(') {
-              phoneValue = phoneValue.substr(0, 2) + '(' + phoneValue.substr(2);
-            }
-            if (phoneValue.length > 6 && phoneValue.charAt(6) !== ')') {
-              phoneValue = phoneValue.substr(0, 6) + ')' + phoneValue.substr(6);
-            }
-            if (phoneValue.length > 7 && phoneValue.charAt(7) !== ' ') {
-              phoneValue = phoneValue.substr(0, 7) + ' ' + phoneValue.substr(7);
-            }
-            if (phoneValue.length > 11 && phoneValue.charAt(11) !== '-') {
-              phoneValue = phoneValue.substr(0, 11) + '-' + phoneValue.substr(11);
-            }
-            if (phoneValue.length > 14 && phoneValue.charAt(14) !== '-') {
-              phoneValue = phoneValue.substr(0, 14) + '-' + phoneValue.substr(14);
-            }
-        
-            // Записываем отформатированный номер в input
-            phoneInput.value = phoneValue;
-          });
+        const swiper1 = new Swiper1('.swiper1', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         });
     </script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+
+
+
+
+    <div style="background-image: url(/assets/img/info.png); background-size: cover; background-position: center; position: relative;">
+        <div class="wrapper">
+            <div style="flex-wrap: wrap-reverse;" class="info">
+                <img style="width: 300px; padding: 50px 0;" src="/assets/img/logo.svg" alt="">
+                <div style="padding: 100px 0;" class="info__texts">
+                    <h1>О нас</h1>
+                    <p style="padding-bottom: 0;">
+                        Компания ProBassein специализируется на обслуживании систем водоподготовки всех видов бассейнов. Наша миссия - обеспечить чистоту и безопасность воды для наших клиентов.
+                        <br>
+                        Благодаря опытной команде высококвалифицированных специалистов, мы обслуживаем оборудование систем водоподготовки бассейнов любого размера и объёма, от детских до олимпийских. ProBassein обеспечивает эффективное и своевременное обслуживание, используя передовые технологии и оборудование для достижения наилучших результатов. Обратитесь к нам и убедитесь в качестве наших услуг!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="work">
+            <h1>Как мы работаем</h1>
+            <div class="work__items">
+                <div class="work__item">
+                    <p class="work__item-number">01</p>
+                    <div class="work__texts">
+                        <h1>Звонок к нам в офис</h1>
+                        <p>Или оставьте заявку на сайте и наш менеджер свяжется с Вами.</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <p class="work__item-number">02</p>
+                    <div class="work__texts">
+                        <h1>Расчет и составление регламента</h1>
+                        <p>Формируем состав работ и стоимость обслуживания</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <p class="work__item-number">03</p>
+                    <div class="work__texts">
+                        <h1>Заключение договора</h1>
+                        <p>По договору мы гарантируем выполнение работ согласно регламенту</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <p class="work__item-number">04</p>
+                    <div class="work__texts">
+                        <h1>Обслуживание Вашего бассейна</h1>
+                        <p>Выезд специалиста и выполнение основных работ</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <p class="work__item-number">05</p>
+                    <div class="work__texts">
+                        <h1>Фиксирование выполняемых работ</h1>
+                        <p>Сервисное обслуживание Вашего бассеина</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <p class="work__item-number">06</p>
+                    <div class="work__texts">
+                        <h1>Круглосуточная поддержка 24 часа в сутки</h1>
+                        <p>При условии заключения договора на год</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="contacts">
+            <div class="contacts__texts">
+                <h1>Контакты</h1>
+                <h2>Режим работы:</h2>
+                <p>ПН-СБ с 09:00 до 21:00</p>
+                <h2>Адрес:</h2>
+                <p>Россия, Ноябрьск, ул.Высоцкого 4</p>
+                <h2>Контакты:</h2>
+                <a href="">Телефон: +7(800)-327-22-40</a>
+                <a href="">Телефон: +7(922)-463-27-27</a>
+            </div>
+            <form class="contacts__form" id="contacts-form" onsubmit="submitForm(event)">
+                <h1>Оставить заявку</h1>
+                <div class="contacts__form-fields">
+                    <input type="text" name="name" id="name" placeholder="Имя" class="contacts__form-fields__modal" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Номер телефона" class="contacts__form-fields__modal" required>
+                    <button type="submit" class="contacts__form-submit-btn">Отправить</button>
+                </div>
+                <div id="success-message" style="display: none;">Заявка успешно отправлена!</div>
+            </form>
+        </div>
+    </div>
     <script src="/assets/js/scroll.js"></script>
     <script src="/assets/js/burger.js"></script>
     <script src="/assets/js/linkscroll.js"></script>
