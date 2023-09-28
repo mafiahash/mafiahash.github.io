@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'Arkhip';
-    src: url('/assets/fonts/Arkhip.eot');
-    src: local('Arkhip'),
-        url('/assets/fonts/Arkhip.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/Arkhip.woff2') format('woff2'),
-        url('/assets/fonts/Arkhip.woff') format('woff'),
-        url('/assets/fonts/Arkhip.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 /* montserrat-100 - cyrillic_latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
