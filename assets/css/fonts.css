@@ -115,3 +115,16 @@
          url('/assets/fonts/montserrat-v25-cyrillic_latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
          url('/assets/fonts/montserrat-v25-cyrillic_latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
   }
+  @font-face {
+     font-family: 'Arkhip';
+     src: url('Arkhip.eot');
+     src: local('Arkhip'),
+         url('Arkhip.eot?#iefix') format('embedded-opentype'),
+         url('Arkhip.woff2') format('woff2'),
+         url('Arkhip.woff') format('woff'),
+         url('Arkhip.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ 
