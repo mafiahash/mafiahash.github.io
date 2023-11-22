@@ -49,6 +49,7 @@ body{
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: brightness(50%);
 }
 
 .intro__wrapper{
@@ -208,11 +209,21 @@ body{
 }
 .intro__project img{
   border: 2px solid #FFF;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 550px;
+  max-height: 350px;
 }
 .swiper__intro__project_img{
   margin-left: 0;
   margin-right: 0;
+  aspect-ratio: 550 / 350; 
+  max-width: 550px; 
+  max-height: 350px; 
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  margin-bottom: 20px;
 }
 .swiper__intro__project_img-wrapper{
   box-sizing: border-box;
@@ -589,7 +600,7 @@ body{
 .services__link:hover .services__link__pic{
   transform: scale(1.1);
 }
-.services__link .stroke{
+/* .services__link .stroke{
   max-width: 350px;
   max-height: 415px;
   width: calc(100% - 45px);
@@ -600,7 +611,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   transition: border 0.3s ease;
-}
+} */
 .services__link:hover  .stroke{
   border: 1px solid #97BC50;
 }
@@ -1047,6 +1058,63 @@ body{
 .contacts form{
   padding-top: 50px;
 }
+.form__radiofields{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+
+.form__radiofield p{
+  color: #6B6B6B;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+.form__radiofield .custom-radio{
+  color: #6B6B6B;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.custom-radio input[type="radio"] {
+  display: none; /* Скрываем стандартную радиокнопку */
+}
+
+.custom-radio .radio-btn {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6B6B6B; /* stroke */
+  border-radius: 50%; /* Круглая форма */
+  display: inline-block;
+  position: relative;
+  margin-right: 10px; /* Отступ между кнопкой и текстом */
+}
+
+.custom-radio input[type="radio"]:checked + .radio-btn::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #6B6B6B;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
 .form__smallfields{
   display: flex;
   justify-content: space-between;
@@ -1115,6 +1183,12 @@ body{
   .contacts form textarea::placeholder{
     font-size: 20px;
   }
+  .form__radiofield p{
+    font-size: 32px;
+  }
+  .form__radiofield .custom-radio{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1131,6 +1205,12 @@ body{
     font-size: 18px;
   }
   .contacts form textarea::placeholder{
+    font-size: 18px;
+  }
+  .form__radiofield p{
+    font-size: 24px;
+  }
+  .form__radiofield .custom-radio{
     font-size: 18px;
   }
 }
@@ -1150,6 +1230,12 @@ body{
   }
   .contacts form textarea::placeholder{
     font-size: 17px;
+  }
+  .form__radiofield p{
+    font-size: 20px;
+  }
+  .form__radiofield .custom-radio{
+    font-size: 16px;
   }
 }
 /* contacts */

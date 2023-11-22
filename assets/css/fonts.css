@@ -1,6 +1,6 @@
 @font-face {
      font-family: 'Arkhip';
-     src: url('/assets/fonts//Arkhip.eot');
+     src: url('/assets/fonts/Arkhip.eot');
      src: local('Arkhip'),
          url('/assets/fonts/Arkhip.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/Arkhip.woff2') format('woff2'),
@@ -8,7 +8,6 @@
          url('/assets/fonts/Arkhip.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
-     
 }
 @font-face {
      font-family: 'Roboto';

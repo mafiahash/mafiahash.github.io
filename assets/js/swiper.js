@@ -6,18 +6,22 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         speed: 1000,
         autoplay: {
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
         },
         loop: true,
         allowTouchMove: false,
         simulateTouch: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
     });
 
     var intro_projectimgSlider = new Swiper('.swiper__intro__project_img', {
         speed: 1000,
         autoplay: {
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
         },
         loop: true,
@@ -27,13 +31,17 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         allowTouchMove: false,
         simulateTouch: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
     });
 });
 
 var intro_projectNumSlider = new Swiper('.swiper_intro__project_title_num',{
     speed: 1000,
     autoplay: {
-        delay: 5000,
+        delay: 10000,
         disableOnInteraction: false,
     },
     loop: true,
@@ -43,12 +51,16 @@ var intro_projectNumSlider = new Swiper('.swiper_intro__project_title_num',{
     },
     allowTouchMove: false,
     simulateTouch: false,
+    effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
 });
 
 var intro_projectTextSlider = new Swiper('.swiper_intro__project-text',{
     speed: 1000,
     autoplay: {
-        delay: 5000,
+        delay: 10000,
         disableOnInteraction: false,
     },
     loop: true,
@@ -58,4 +70,8 @@ var intro_projectTextSlider = new Swiper('.swiper_intro__project-text',{
     },
     allowTouchMove: false,
     simulateTouch: false,
+    effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
 });
