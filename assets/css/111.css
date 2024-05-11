@@ -1,0 +1,97 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+nav .logo img{
+    height: clamp(2.813rem, 2.442rem + 1.85vw, 4.063rem);
+}
+nav .soc{
+    display: flex;
+    gap: 15px;
+}
+nav .soc a{
+    display: flex;
+    border-radius: 100%;
+    background-color: #fff;
+    width: clamp(2.5rem, 2.315rem + 0.93vw, 3.125rem);
+    height: clamp(2.5rem, 2.315rem + 0.93vw, 3.125rem);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.project > h1{
+    font-size: clamp(2rem, 1.407rem + 2.96vw, 4rem);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.project > p{
+    font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.info{
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info .item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+.info .item h1{
+    font-size: clamp(1.25rem, 1.176rem + 0.37vw, 1.5rem);
+    padding-bottom: 5px;
+}
+.info .item p{
+    font-size: clamp(1rem, 0.926rem + 0.37vw, 1.25rem);
+    font-weight: 100;
+}
+.info .item img{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #83ba42;
+}
+.project_gallery{
+    position: relative;
+}
+.gallery-wrapper{
+    margin-top: 100px;
+    display: flex;
+}
+.gallery-prev,.gallery-next{
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    padding: 10px;
+
+}
+.gallery-next{
+    transform: scale(-1, 1)
+}
+.swiper-button-disabled img{
+    opacity: 0.35;
+}
+.project__texts{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.project__texts > h1{
+    font-size: clamp(1.563rem, 1.285rem + 1.39vw, 2.5rem);
+    margin-bottom: 10px;
+}
+.project__texts > p{
+    font-weight: 100;
+    font-size: clamp(1rem, 0.926rem + 0.37vw, 1.25rem);
+    line-height: 1.5;
+    color: #c7c7c7;
+}
