@@ -66,6 +66,7 @@ const design = new Swiper('.designSwiper', {
     },
 });
 
+
 const arch = new Swiper('.archSwiper', {
     speed: 500,
     allowTouchMove: false,
@@ -80,6 +81,7 @@ const arch = new Swiper('.archSwiper', {
         prevEl: '.services__archbutton-prev',
     },
 });
+
 
 const gallery = new Swiper('.project_gallery', {
     speed: 500,

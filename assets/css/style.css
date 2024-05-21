@@ -147,7 +147,7 @@ nav .links a:hover img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   transition: height 0.5s ease;
 }
 .nav2 a{
@@ -238,7 +238,7 @@ nav .links a:hover img{
   display: flex;
   align-items: center;
   max-height: 85px;
-  font-size: clamp(3rem, 2.704rem + 1.48vw, 4rem);
+  font-size: clamp(3rem, 2.926rem + 0.37vw, 3.25rem);
   font-family: 'Segoe UI';
 }
 .content .img .btns{
@@ -304,6 +304,11 @@ nav .links a:hover img{
   text-align: center;
   font-weight: 100;
 }
+.content .texts h1 strong{
+  display: inline-block;
+  padding-bottom: 20px;
+  font-size: clamp(3rem, 2.778rem + 1.11vw, 3.75rem);
+}
 .content .texts p{
   text-align: right;
   font-size: clamp(1rem, 0.926rem + 0.37vw, 1.25rem);
@@ -346,9 +351,10 @@ nav .links a:hover img{
   max-width: 650px;
 }
 .about__texts h1{
-  color: #ffffff;
+  color: #97BC50;
   font-size: clamp(2rem, 1.407rem + 2.96vw, 4rem);
   padding-bottom: 10px;
+  font-weight: 900;
 }
 .about__texts p{
   color: #FFF;
@@ -425,10 +431,10 @@ nav .links a:hover img{
   padding: 50px 0;
 }
 .portfolio h1{
-  color: #FFF;
+  color: #97BC50;
   font-family: Segoe UI;
   font-size: clamp(2rem, 1.407rem + 2.96vw, 4rem);
-  font-weight: 400;
+  font-weight: 900;
 }
 .portfolio__links{
   display: flex;
@@ -486,10 +492,10 @@ nav .links a:hover img{
   background-position: center center;
 }
 .stepsbg h1{
-  color: #FFF;
+  color: #97BC50;
   font-family: Segoe UI;
   font-size: clamp(2rem, 1.704rem + 1.48vw, 3rem);
-  font-weight: 400;
+  font-weight: 900;
   padding-bottom: 50px;
 }
 .steps{
@@ -508,20 +514,20 @@ nav .links a:hover img{
   color: #FFF;
   font-family: Segoe UI;
   font-size: clamp(2rem, 1.704rem + 1.48vw, 3rem);
-  font-weight: 400;
+  font-weight: 900;
   min-width: clamp(2.813rem, 2.257rem + 2.78vw, 4.688rem);
 }
 .step span{
   width: 1px;
   height: 100%;
   flex-shrink: 0;
-  background: #D9D9D9;
+  background: #97BC50;
 }
 .step__texts h1{
   font-family: Segoe UI;
   color: #FFF;
   font-size: clamp(1.125rem, 1.014rem + 0.56vw, 1.5rem);
-  font-weight: 400;
+  font-weight: 900;
   padding-bottom: 15px;
 }
 .step__texts p{
@@ -577,7 +583,7 @@ nav .links a:hover img{
   color: #FFF;
   font-family: Segoe UI;
   font-size: clamp(1.5rem, 1.204rem + 1.48vw, 2.5rem);
-  font-weight: 400;
+  font-weight: 900;
   padding-bottom: 20px;
 }
 .info__texts p{
@@ -590,7 +596,7 @@ nav .links a:hover img{
   font-size: clamp(1.063rem, 0.933rem + 0.65vw, 1.5rem);
   font-weight: 300;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 8px 20px 10px 20px;
   border: 1px solid #97BC50;
   transition: background 0.3s ease;
   text-align: center;
@@ -606,10 +612,10 @@ nav .links a:hover img{
   gap: 30px;
 }
 .services__h1{
-  color: #FFF;
+  color: #97BC50;
   font-family: Segoe UI;
   font-size: clamp(2rem, 1.407rem + 2.96vw, 4rem);
-  font-weight: 400;
+  font-weight: 900;
   padding-bottom: 50px;
 }
 .services__cards{
@@ -626,7 +632,7 @@ nav .links a:hover img{
   position: relative;
   padding: 25px;
   background-color: #101010;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s;
   overflow: hidden;
 }
 .services__card:hover{
@@ -673,7 +679,13 @@ nav .links a:hover img{
   -webkit-text-fill-color: transparent; /* делаем текст прозрачным, чтобы обводка была видна */
           text-fill-color: transparent;
 }
+.services__card:first-child .black h1{
+  transform-origin: top left;
+  transform: rotate(90deg);
+  left: 100%;
+}
 .services__card .black img{
+  max-width: 550px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -813,10 +825,10 @@ nav .links a:hover img{
   padding: 50px 0;
 }
 .contacts h1{
-  color: #FFF;
+  color: #97BC50;
   font-family: Segoe UI;
   font-size: clamp(2rem, 1.407rem + 2.96vw, 4rem);
-  font-weight: 400;
+  font-weight: 900;
   padding-bottom: 25px;
 }
 .contacts a{
@@ -876,13 +888,13 @@ nav .links a:hover img{
   z-index: 4;
 }
 
-#ContactsFormMultiStepForm {
+.ContactsFormMultiStepForm {
   background: url(/assets/img/stepbg.png);
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;

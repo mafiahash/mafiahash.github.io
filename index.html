@@ -43,9 +43,16 @@
             <div class="content">
                 <div class="swiper img">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/assets/img/project2.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/assets/img/project2.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/assets/img/1 (1)-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0001.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0002.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0003.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0004.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0005.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0006.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0007.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0008.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0009.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/assets/img/introbg/0010.jpg" alt=""></div>
                     </div>
                     <div class="num_btns">
                         <div class="swiper num">
@@ -53,6 +60,13 @@
                                 <div class="swiper-slide">01</div>
                                 <div class="swiper-slide">02</div>
                                 <div class="swiper-slide">03</div>
+                                <div class="swiper-slide">04</div>
+                                <div class="swiper-slide">05</div>
+                                <div class="swiper-slide">06</div>
+                                <div class="swiper-slide">07</div>
+                                <div class="swiper-slide">08</div>
+                                <div class="swiper-slide">09</div>
+                                <div class="swiper-slide">10</div>
                             </div>
                         </div>
 
@@ -89,7 +103,7 @@
                     <div class="header">
                         <h1>
                             <strong>ДИЗАЙН ИНТЕРЬЕРА</strong><br>
-                            И АРХИТЕКТУРНОЕ СТРОИТЕЛЬСТВО
+                            И АРХИТЕКТУРНОЕ ПРОЕКТИРОВАНИЕ
                         </h1>
                     </div>
                     <p>Прежде чем что-либо строить — слушайте город,<br>Прежде чем что-либо сносить — слушайте сердце.<br>Норман Фостер</p>
@@ -98,9 +112,16 @@
         </div>
         <div class="swiper introbg">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/assets/img/project2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="/assets/img/project2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="/assets/img/1 (1)-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0001.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0002.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0003.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0004.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0005.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0006.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0007.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0008.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0009.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/img/introbg/0010.jpg" alt=""></div>
             </div>
         </div>
     </div>
@@ -180,7 +201,6 @@
                     <div class="black">
                         <h1 data-text="ДИЗАЙН">ДИЗАЙН</h1>
                         <img src="/assets/img/services1.png" alt="">
-                        <!-- <img src="/assets/img/click.svg" alt=""> -->
                     </div>
                     <div class="white">
                         <div class="header">
@@ -229,7 +249,7 @@
                         </div>
                         <div class="services__buttons">
                             <img class="services__designbutton-prev" src="/assets/img/services__button-left.svg" alt="">
-                            <a onclick="openForm()">Заполнить заявку</a>
+                            <a onclick="openForm('design')">Заполнить заявку</a>
                             <img class="services__designbutton-next" src="/assets/img/services__button-right.svg" alt="">
                         </div>
                     </div>
@@ -238,7 +258,6 @@
                     <div class="black">
                         <h1 data-text="АРХИТЕКТУРА">АРХИТЕКТУРА</h1>
                         <img src="/assets/img/services2.png" alt="">
-                        <!-- <img src="/assets/img/click.svg" alt=""> -->
                     </div>
                     <div class="white">
                         <div class="header">
@@ -290,7 +309,7 @@
                         </div>
                         <div class="services__buttons">
                             <img class="services__archbutton-prev" src="/assets/img/services__button-left.svg" alt="">
-                            <a onclick="openForm()">Заполнить заявку</a>
+                            <a onclick="openForm('arch')">Заполнить заявку</a>
                             <img class="services__archbutton-next" src="/assets/img/services__button-right.svg" alt="">
                         </div>
                     </div>
@@ -415,118 +434,264 @@
     </div>
 
 
-    <div class="overlay" id="overlay">
+
+    <div class="overlay" id="arch">
         <div class="form-container">
-            <span class="close-btn" onclick="closeForm()">×</span>
-            <form id="ContactsFormMultiStepForm" method="post" onsubmit="submitForm(event)">
+            <span class="close-btn" onclick="closeForm('arch')">×</span>
+            <form class="ContactsFormMultiStepForm" id="ContactsFormMultiStepFormArch" method="post" onsubmit="submitForm(event, 'arch')">
                 <div class="ContactsFormStep active" id="ContactsFormStep1">
-                    <h1>Где вам нужен ремонт?</h1>
+                    <h1>Тип частной собственности?</h1>
                     <div class="input">
-                        <input type="radio" id="new_building" name="repair_location" value="new_building">
-                        <label for="new_building">Новостройка</label>
+                        <input type="radio" id="flat" name="repair_location" value="Многоэтажный жилой дом">
+                        <label for="flat">Многоэтажный жилой дом</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="secondary_housing" name="repair_location" value="secondary_housing">
-                        <label for="secondary_housing">Вторичка</label>
+                        <input type="radio" id="house" name="repair_location" value="Частный дом">
+                        <label for="house">Частный дом</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="private_house" name="repair_location" value="private_house">
-                        <label for="private_house">Частный дом</label>
+                        <input type="radio" id="commerce" name="repair_location" value="Коммерческое помещение">
+                        <label for="commerce">Коммерческое помещение</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="commercial" name="repair_location" value="commercial">
-                        <label for="commercial">Коммерческое помещение</label>
+                        <input type="radio" id="education" name="repair_location" value="Образовательное учреждение">
+                        <label for="education">Образовательное учреждение</label>
                     </div>
-                    <button type="button" class="ContactsFormButton" onclick="nextStep()">Далее</button>
+                    <button type="button" class="ContactsFormButton" onclick="nextStep('arch')">Далее</button>
                 </div>
                 <div class="ContactsFormStep" id="ContactsFormStep2">
-                    <h1>Какая квадратура?</h1>
+                    <h1>Квадратура объекта</h1>
                     <div class="input">
-                        <input type="radio" id="up_to_40" name="square_meters" value="up_to_40">
-                        <label for="up_to_40">До 40м2</label>
+                        <input type="radio" id="50_to_100" name="square_meters" value="От 50 до 100 м2">
+                        <label for="50_to_100">От 50 до 100 м2</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="40_to_60" name="square_meters" value="40_to_60">
-                        <label for="40_to_60">От 40м2 до 60м2</label>
+                        <input type="radio" id="100_to_500" name="square_meters" value="От 100 до 500 м2">
+                        <label for="100_to_500">От 100 до 500 м2</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="65_to_90" name="square_meters" value="65_to_90">
-                        <label for="65_to_90">От 65м2 до 90м2</label>
+                        <input type="radio" id="500_to_1000" name="square_meters" value="От 500 до 1000 м2">
+                        <label for="500_to_1000">От 500 до 1000 м2</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="90_to_120" name="square_meters" value="90_to_120">
-                        <label for="90_to_120">От 90м2 до 120м2</label>
+                        <input type="radio" id="1000_to_5000" name="square_meters" value="От 1000 до 5000 м2">
+                        <label for="1000_to_5000">От 1000 до 5000 м2</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="120_plus" name="square_meters" value="120_plus">
-                        <label for="120_plus">120+м2</label>
+                        <input type="radio" id="5000_plus" name="square_meters" value="От 5000 м2">
+                        <label for="5000_plus">От 5000 м2</label>
                     </div>
-                    <button type="button" class="ContactsFormButton" onclick="prevStep()">Назад</button>
-                    <button type="button" class="ContactsFormButton" onclick="nextStep()">Далее</button>
+                    <button type="button" class="ContactsFormButton" onclick="prevStep('arch')">Назад</button>
+                    <button type="button" class="ContactsFormButton" onclick="nextStep('arch')">Далее</button>
                 </div>
                 <div class="ContactsFormStep" id="ContactsFormStep3">
-                    <h1>Когда планируете начать ремонт?</h1>
+                    <h1>Какие документы имеются на объект/участок?</h1>
                     <div class="input">
-                        <input type="radio" id="soon" name="start_time" value="soon">
-                        <label for="soon">В ближайшее время</label>
+                        <input type="radio" id="gpzu" name="documents" value="ГПЗУ">
+                        <label for="gpzu">ГПЗУ</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="next_month" name="start_time" value="next_month">
-                        <label for="next_month">В следующем месяце</label>
+                        <input type="radio" id="Topographic" name="documents" value="Топографическая съёмка">
+                        <label for="Topographic">Топографическая съёмка</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="future" name="start_time" value="future">
-                        <label for="future">Узнаю на будущее</label>
+                        <input type="radio" id="geo" name="documents" value="Геологические изыскания">
+                        <label for="geo">Геологические изыскания</label>
                     </div>
-                    <button type="button" class="ContactsFormButton" onclick="prevStep()">Назад</button>
-                    <button type="button" class="ContactsFormButton" onclick="nextStep()">Далее</button>
+                    <button type="button" class="ContactsFormButton" onclick="prevStep('arch')">Назад</button>
+                    <button type="button" class="ContactsFormButton" onclick="nextStep('arch')">Далее</button>
                 </div>
                 <div class="ContactsFormStep" id="ContactsFormStep4">
                     <h1>Связь с вами</h1>
                     <input type="text" name="name" placeholder="Ваше имя" class="ContactsFormInput">
                     <input type="tel" name="phone" placeholder="Номер телефона" class="ContactsFormInput">
+                    <input type="text" name="city" placeholder="В каком городе находится объект?" class="ContactsFormInput">
+                    <input type="text" name="address" placeholder="Адрес объекта" class="ContactsFormInput">
                     <textarea name="message" placeholder="Сообщение (необязательно)" class="ContactsFormTextarea"></textarea>
-                    <button type="button" class="ContactsFormButton" onclick="prevStep()">Назад</button>
+                    <button type="button" class="ContactsFormButton" onclick="prevStep('arch')">Назад</button>
                     <button type="submit" class="ContactsFormButton">Отправить</button>
                     <div id="success-message" style="display: none;">Заявка успешно отправлена!</div>
                 </div>
             </form>
         </div>
     </div>
+    
+
+    <div class="overlay" id="design">
+        <div class="form-container">
+            <span class="close-btn" onclick="closeForm('design')">×</span>
+            <form class="ContactsFormMultiStepForm" id="ContactsFormMultiStepFormDesign" method="post" onsubmit="submitForm(event, 'design')">
+                <div class="ContactsFormStep active" id="ContactsFormStep1">
+                    <h1>Где вам нужен ремонт?</h1>
+                    <div class="input">
+                        <input type="radio" id="new_building" name="repair_location" value="Новостройка">
+                        <label for="new_building">Новостройка</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="secondary_housing" name="repair_location" value="Вторичка">
+                        <label for="secondary_housing">Вторичка</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="private_house" name="repair_location" value="Частный дом">
+                        <label for="private_house">Частный дом</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="commercial" name="repair_location" value="Коммерческое помещение">
+                        <label for="commercial">Коммерческое помещение</label>
+                    </div>
+                    <button type="button" class="ContactsFormButton" onclick="nextStep('design')">Далее</button>
+                </div>
+                <div class="ContactsFormStep" id="ContactsFormStep2">
+                    <h1>Какая квадратура?</h1>
+                    <div class="input">
+                        <input type="radio" id="up_to_40" name="square_meters" value="До 40м2">
+                        <label for="up_to_40">До 40м2</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="40_to_60" name="square_meters" value="От 40м2 до 60м2">
+                        <label for="40_to_60">От 40м2 до 60м2</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="65_to_90" name="square_meters" value="От 65м2 до 90м2">
+                        <label for="65_to_90">От 65м2 до 90м2</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="90_to_120" name="square_meters" value="От 90м2 до 120м2">
+                        <label for="90_to_120">От 90м2 до 120м2</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="120_plus" name="square_meters" value="120+м2">
+                        <label for="120_plus">120+м2</label>
+                    </div>
+                    <button type="button" class="ContactsFormButton" onclick="prevStep('design')">Назад</button>
+                    <button type="button" class="ContactsFormButton" onclick="nextStep('design')">Далее</button>
+                </div>
+                <div class="ContactsFormStep" id="ContactsFormStep3">
+                    <h1>На какой стадии находится объект сейчас?</h1>
+                    <div class="input">
+                        <input type="radio" id="kotlovan" name="stage" value="На стадии котлована">
+                        <label for="kotlovan">На стадии котлована</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="iron" name="stage" value="В железобетонных конструкциях">
+                        <label for="iron">В железобетонных конструкциях</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="brick" name="stage" value="Кирпичная кладка стен готова">
+                        <label for="brick">Кирпичная кладка стен готова</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="whitebox" name="stage" value="Объект сдан в стадии White box">
+                        <label for="whitebox">Объект сдан в стадии White box</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="old" name="stage" value="Старый ремонт">
+                        <label for="old">Старый ремонт</label>
+                    </div>
+                    <button type="button" class="ContactsFormButton" onclick="prevStep('design')">Назад</button>
+                    <button type="button" class="ContactsFormButton" onclick="nextStep('design')">Далее</button>
+                </div>
+                <div class="ContactsFormStep" id="ContactsFormStep4">
+                    <h1>Связь с вами</h1>
+                    <input type="text" name="name" placeholder="Ваше имя" class="ContactsFormInput">
+                    <input type="tel" name="phone" placeholder="Номер телефона" class="ContactsFormInput">
+                    <input type="text" name="city" placeholder="В каком городе находится объект?" class="ContactsFormInput">
+                    <input type="text" name="address" placeholder="Адрес объекта" class="ContactsFormInput">
+                    <textarea name="message" placeholder="Сообщение (необязательно)" class="ContactsFormTextarea"></textarea>
+                    <button type="button" class="ContactsFormButton" onclick="prevStep('design')">Назад</button>
+                    <button type="submit" class="ContactsFormButton">Отправить</button>
+                    <div id="success-message" style="display: none;">Заявка успешно отправлена!</div>
+                </div>
+            </form>
+        </div>
+    </div>    
+
+    
+
+    
 
 
     <script>
-        // script.js
-        let currentStep = 0;
-        const steps = document.querySelectorAll('.ContactsFormStep');
+        let currentSteps = {
+            arch: 0,
+            design: 0
+        };
 
-        function showStep(step) {
+        function showStep(formId, step) {
+            const form = document.getElementById(formId);
+            const steps = form.querySelectorAll('.ContactsFormStep');
             steps.forEach((s, index) => {
                 s.style.display = step === index ? 'block' : 'none';
                 s.classList.toggle('active', step === index);
             });
         }
 
-        function nextStep() {
-            if (currentStep < steps.length - 1) {
-                currentStep++;
-                showStep(currentStep);
+        function nextStep(formType) {
+            const formId = formType === 'arch' ? 'ContactsFormMultiStepFormArch' : 'ContactsFormMultiStepFormDesign';
+            if (currentSteps[formType] < document.getElementById(formId).querySelectorAll('.ContactsFormStep').length - 1) {
+                currentSteps[formType]++;
+                showStep(formId, currentSteps[formType]);
             }
         }
 
-        function prevStep() {
-            if (currentStep > 0) {
-                currentStep--;
-                showStep(currentStep);
+        function prevStep(formType) {
+            const formId = formType === 'arch' ? 'ContactsFormMultiStepFormArch' : 'ContactsFormMultiStepFormDesign';
+            if (currentSteps[formType] > 0) {
+                currentSteps[formType]--;
+                showStep(formId, currentSteps[formType]);
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            showStep(0); // Показываем первый шаг при загрузке
+            showStep('ContactsFormMultiStepFormArch', 0); // Показываем первый шаг при загрузке для arch
+            showStep('ContactsFormMultiStepFormDesign', 0); // Показываем первый шаг при загрузке для design
         });
+
+        function openForm(formType) {
+            document.getElementById(formType).style.display = 'flex';
+        }
+
+        function closeForm(formType) {
+            document.getElementById(formType).style.display = 'none';
+        }
+
+        function submitForm(e, formType) {
+            e.preventDefault();
+
+            const formId = formType === 'arch' ? 'ContactsFormMultiStepFormArch' : 'ContactsFormMultiStepFormDesign';
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+
+            const phpScript = formType === 'arch' ? 'form_arch.php' : 'form_design.php';
+
+            fetch(phpScript, {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    document.getElementById('success-message').style.display = 'block';
+                } else {
+                    console.error('Error: Server returned an error status');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+            closeForm(formType); // Закрываем форму
+        }
     </script>
 
-    
+
+
+
+
+
+
+
+
     <script>
         function toggleMenu(x) {
             x.classList.toggle("change");
@@ -555,65 +720,6 @@
             });
         });
     </script>
-
-    <script>
-        // Функция для открытия формы
-        function openForm() {
-            var overlay = document.getElementById('overlay');
-            overlay.style.display = 'flex';
-        }
-
-        // Функция для закрытия формы
-        function closeForm() {
-            var overlay = document.getElementById('overlay');
-            overlay.style.display = 'none';
-        }
-
-        // Добавляем обработчик события для всех ссылок с классом "openForm"
-        // var openFormLinks = document.querySelectorAll('.openForm');
-        // openFormLinks.forEach(function(link) {
-        //     link.addEventListener('click', function(event) {
-        //         event.preventDefault(); // Предотвращаем действие по умолчанию (переход по ссылке)
-        //         openForm(); // Вызываем функцию открытия формы
-        //     });
-        // });
-
-        // Функция для обработки отправки формы
-        function submitForm(e) {
-            e.preventDefault();
-        
-            const formData = new FormData(e.target);
-        
-            fetch('form.php', {
-                method: 'POST',
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === 'success') {
-                document.getElementById('success-message').style.display = 'block';
-                } else {
-                console.error('Error: Server returned an error status');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-            closeForm(); // Закрываем форму
-            e.preventDefault(); // Предотвращаем отправку формы по умолчанию (если не используется AJAX)
-        }
-    </script>
-
-
-
-
-
-
-
-
-
-
-
     <script src="/assets/js/swiper.js"></script>
 </body>
 </html>
