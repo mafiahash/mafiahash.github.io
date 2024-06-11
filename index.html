@@ -188,11 +188,11 @@
                     <p>01</p>
                     <div class="texts">
                         <h2>Что такое фулфилмент?</h2>
-                        <div class="text">
+                        <div class="text close">
                             <p>Фулфилмент — это комплексная услуга по хранению, обработке, упаковке и отправке ваших товаров. Она оптимизирует логистику и позволяет сосредоточиться на развитии бизнеса.</p>
                         </div>
                     </div>
-                    <div onclick="toggleFaq(this)" class="button">
+                    <div onclick="toggleFaq(this)" class="button close">
                         <img src="/assets/img/plus.svg" alt="">
                     </div>
                 </div>
@@ -201,11 +201,11 @@
                     <p>02</p>
                     <div class="texts">
                         <h2>Каковы преимущества фулфилмента?</h2>
-                        <div class="text">
+                        <div class="text close">
                             <p>Фулфилмент экономит время и деньги, улучшает качество обслуживания и позволяет масштабировать бизнес без дополнительных затрат на логистику.</p>
                         </div>
                     </div>
-                    <div onclick="toggleFaq(this)" class="button">
+                    <div onclick="toggleFaq(this)" class="button close">
                         <img src="/assets/img/plus.svg" alt="">
                     </div>
                 </div>
@@ -214,11 +214,11 @@
                     <p>03</p>
                     <div class="texts">
                         <h2>Какие товары можно обрабатывать через фулфилмент?</h2>
-                        <div class="text">
+                        <div class="text close">
                             <p>Фулфилмент-центры обрабатывают одежду, электронику, товары для дома, косметику и даже некоторые пищевые продукты (при наличии условий).</p>
                         </div>
                     </div>
-                    <div onclick="toggleFaq(this)" class="button">
+                    <div onclick="toggleFaq(this)" class="button close">
                         <img src="/assets/img/plus.svg" alt="">
                     </div>
                 </div>
@@ -227,11 +227,11 @@
                     <p>04</p>
                     <div class="texts">
                         <h2>Как начать пользоваться услугами фулфилмента?</h2>
-                        <div class="text">
+                        <div class="text close">
                             <p>Выберите провайдера, заключите договор, интегрируйте системы и отправьте товары на склад фулфилмент-центра.</p>
                         </div>
                     </div>
-                    <div onclick="toggleFaq(this)" class="button">
+                    <div onclick="toggleFaq(this)" class="button close">
                         <img src="/assets/img/plus.svg" alt="">
                     </div>
                 </div>
@@ -273,16 +273,23 @@
     </script>
     <script>
         function toggleFaq(button) {
-            // Получаем родительский элемент .item
             const item = button.closest('.item');
-
-            // Добавляем или убираем класс active у кнопки
-            button.classList.toggle('active');
-
-            // Добавляем или убираем класс active у .texts .text
+            if (button.classList.contains('open')) {
+                button.classList.remove('open');
+                button.classList.add('close');
+            } else {
+                button.classList.remove('close');
+                button.classList.add('open');
+            }
             const text = item.querySelector('.texts .text');
-            text.classList.toggle('active');
+            if (text.classList.contains('open')) {
+                text.classList.remove('open');
+                text.classList.add('close');
+            } else {
+                text.classList.remove('close');
+                text.classList.add('open');
+            }
         }
-    </script>
+    </script>    
 </body>
 </html>

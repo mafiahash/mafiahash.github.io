@@ -411,7 +411,7 @@ nav .button:hover{
 }
 .work_steps .items .item .texts > p{
   font-weight: 700;
-  font-size: 16px;
+  font-size: 32px;
   color: #FFFFFF;
 }
 .work_steps .items .item .texts .text h2{
@@ -458,10 +458,12 @@ nav .button:hover{
 }
 .faq .items .item .texts .text {
   transition: max-height 0.7s ease-in-out, padding-top 0.7s ease-in-out;
-  max-height: 0;
   overflow: hidden;
 }
-.faq .items .item .texts .text.active{
+.faq .items .item .texts .text.close{
+  max-height: 0;
+}
+.faq .items .item .texts .text.open{
   max-height: 500px;
 }
 .faq .items .item .texts .text p{
@@ -483,11 +485,21 @@ nav .button:hover{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.faq .items .item .button.active{
+.faq .items .item .button.open{
   transform: rotate(-135deg);
 }
-.faq .items .item .button:hover{
-  transform: rotate(-135deg);
+.faq .items .item .button.close{
+  transform: rotate(90deg);
+}
+@media (min-width: 481px) {
+  .faq .items .item .button:hover {
+    transform: rotate(-135deg);
+  }
+}
+@media screen and (max-width: 480px) {
+  .faq .items .item > p{
+    display: none;
+  }
 }
 /*contacts*/
 .contacts{
@@ -521,7 +533,7 @@ nav .button:hover{
   background: #efefef;
   border-radius: 30px;
   text-align: center;
-  max-width: 450px;
+  max-width: 400px;
   width: 100%;
 }
 .contacts .form h1{
